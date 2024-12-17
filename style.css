@@ -7,8 +7,8 @@
 
         /* font-family: "Roboto Slab", serif; */
         /* font-family: "Poppins", sans-serif; */
-        /* font-family: "Dancing Script", serif; */
-        /* font-family: "Great Vibes", serif; */
+        /* font-family: "Rochester", cursive; */
+
 }
 
 /* Reset and general styling */
@@ -68,13 +68,13 @@ body {
 }
 
 .home .left span{
-      font-family: "Great Vibes", cursive;
+      font-family: "Rochester", cursive;
       font-size: 2rem;
       text-shadow: var(--shadow);
 }
 
 .home .left h2{
-      font-family: "Great Vibes", cursive;
+      font-family: "Rochester", cursive;
       text-transform: capitalize;
       font-size: 6rem;
       text-shadow: var(--shadow);
