@@ -1,0 +1,280 @@
+/* Media Query (Responsive) */
+
+/* 1. Laptop besar (15 inch ke atas) */
+/* Gaya untuk layar besar seperti laptop besar atau monitor */
+@media (min-width: 1200px) {
+}
+
+/* 2. Laptop standar dan kecil */
+/* Gaya untuk layar laptop standar dan kecil */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* 3. Tablet (portrait & landscape) */
+/* Gaya untuk layar tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+/* 4. Smartphone besar (phablet) */
+/* Gaya untuk smartphone besar */
+@media (min-width: 576px) and (max-width: 767px) {
+}
+
+/* 5. Smartphone kecil */
+/* Gaya untuk smartphone kecil */
+@media (max-width: 575px) { 
+/* GoHealthy */
+.go-healthy {
+      display: flex;
+      min-height: auto;
+      color: white;
+}
+
+.go-healthy #text-title {
+      width: 100%;
+      height: auto;
+      padding: 5rem;
+}
+
+.go-healthy #text-title h2 {
+      font-size: 3rem;
+}
+
+.go-healthy #text-title p {
+      font-size: 1rem;
+      margin-top: 0.1rem;
+      margin-bottom: 0;
+}
+
+.go-healthy #text-title span {
+      font-family: "Dancing Script", serif;
+      font-size: 0.9rem;
+      margin-top: -6rem;
+}
+
+.go-healthy #text-deskripsi {
+    margin-top: -2rem;
+}
+
+.go-healthy #text-deskripsi h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+}
+
+.go-healthy #text-deskripsi p {
+      font-size: 0.9rem;
+      margin-bottom: 1.5rem;
+      text-indent: 2rem;
+      text-align: justify;
+}
+
+.go-healthy #text-job {
+    width: 98%;
+    height: auto;
+}
+
+.go-healthy #text-job h2 {
+      margin-top: 2rem;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+}
+.go-healthy #text-job li {
+      font-size: 0.9rem;
+      text-align: justify;
+      width: 90%;
+}
+
+.go-healthy .workflow {
+      width: 70%;
+      height: 90%;
+}
+
+.go-healthy .garis {
+    margin-top: 2rem !important;
+    width: 100%;
+    margin-left: 1rem;
+}
+
+/* Gambar agar memenuhi elemen */
+.go-healthy img {
+    width: 90%; /* Gambar memenuhi lebar container */
+    height: auto; /* Jaga proporsi gambar */
+    display: block; /* Hilangkan spasi tambahan di bawah gambar */
+    /* border-radius: 1; Hapus radius jika diperlukan */
+    box-shadow: none; /* Hapus shadow jika tidak diperlukan */
+}
+
+/* Style untuk link dengan hover efek */
+.go-healthy .hover-overlay {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    width: 90%; /* Mengikuti ukuran gambar */
+    /* margin-left: 5%; Sama seperti gambar */
+    /* border-radius: 1%; Sama seperti gambar */
+    overflow: hidden; /* Untuk memastikan elemen dalamnya tidak keluar */
+}
+
+.go-healthy .hover-overlay img {
+    width: 90%;
+    box-shadow: var(--shadow);
+    /* border-radius: 1%; */
+    /* transition: transform 0.3s ease-in-out; Efek zoom */
+}
+
+/* .go-healthy .hover-overlay:hover img {
+    transform: scale(1.05); Zoom gambar saat hover
+} */
+
+/* Overlay hitam */
+.go-healthy .hover-overlay::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 5%;
+    width: 90%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Transparansi hitam */
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    /* border-radius: inherit; Ikuti border-radius dari elemen induk */
+    /* border-radius: 1%; */
+}
+
+.go-healthy .hover-overlay:hover::after {
+    opacity: 1; /* Tampilkan overlay hitam saat hover */
+}
+
+/* Tombol klik */
+.go-healthy .hover-overlay .btn-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #ffffff;
+    color: #000;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    opacity: 0; /* Sembunyikan tombol awalnya */
+    transition: opacity 0.3s ease-in-out;
+    /* border-radius: 5px; */
+    z-index: 1; /* Pastikan tombol berada di atas overlay */
+}
+
+.go-healthy .hover-overlay:hover .btn-overlay {
+    opacity: 1; /* Tampilkan tombol saat hover */
+}
+
+/* class gohealthy yang di dalam class next */
+.next .text-next {
+    margin-top: 1rem !important;
+}
+
+/* Gambar agar memenuhi elemen */
+.next img {
+    width: 70%; /* Gambar memenuhi lebar container */
+    height: 100%; /* Jaga proporsi gambar */
+     display: block; /*Hilangkan spasi tambahan di bawah gambar */
+    /* border-radius: 1; Hapus radius jika diperlukan */
+    box-shadow: none; /* Hapus shadow jika tidak diperlukan */
+}
+
+/* Style untuk link dengan hover efek */
+.next .row .hover-overlay {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    width: 70%; /* Mengikuti ukuran gambar */
+    /* margin-left: 5%; Sama seperti gambar */
+    /* border-radius: 1%; Sama seperti gambar */
+    overflow: hidden; /* Untuk memastikan elemen dalamnya tidak keluar */
+}
+
+
+.next .row .hover-overlay img {
+    width: 70%;
+    box-shadow: var(--shadow);
+    /* border-radius: 1%; */
+    /* transition: transform 0.3s ease-in-out; Efek zoom */
+}
+
+/* .go-healthy .hover-overlay:hover img {
+    transform: scale(1.05); Zoom gambar saat hover
+} */
+
+/* Overlay hitam */
+.next .row .hover-overlay::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 15%;
+    width: 70%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Transparansi hitam */
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    /* border-radius: inherit; Ikuti border-radius dari elemen induk */
+    /* border-radius: 1%; */
+}
+
+.next .row .hover-overlay:hover::after {
+    opacity: 1; /* Tampilkan overlay hitam saat hover */
+}
+
+/* Tombol klik */
+.next .row .hover-overlay .btn-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #ffffff;
+    color: #000;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    opacity: 0; /* Sembunyikan tombol awalnya */
+    transition: opacity 0.3s ease-in-out;
+    /* border-radius: 5px; */
+    z-index: 1; /* Pastikan tombol berada di atas overlay */
+}
+
+.next .row .hover-overlay:hover .btn-overlay {
+    opacity: 1; /* Tampilkan tombol saat hover */
+}
+
+/* Footer */
+footer {
+      position: relative;
+      width: 100%;
+      height: auto;
+      bottom: 0%;
+      left: 0%;
+      margin-top: -1rem;
+      padding: 2rem;
+      background-color: var(--blue);
+      color: white;
+      font-size: 0.9rem;
+}
+
+footer a {
+      color: var(--bg);
+      font-weight: bold;
+      text-decoration: none;
+}
+
+footer a:hover {
+      color: black;
+}
+
+footer li {
+      list-style: none;
+      display: inline;
+      margin: 0.5rem;
+}
+
+}

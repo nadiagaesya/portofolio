@@ -13,26 +13,28 @@
 
 /* Reset and general styling */
 body {
-    margin: 0;
-    /* min-height: 3000px; */
     font-family: "Roboto Slab", serif;
     background-color: var(--blue);
+    position: relative; /* Hindari efek samping pada scrolling vertikal */
+    margin: 0; /* Pastikan tidak ada margin di body */
 }
 
 /* Navbar */
-.navbar {
-      background-color: var(--blue) !important;
-      display: flex;
+.navbar{
+ background-color: var(--blue) !important; /*!important -> agar bg ini juga digunakan selain bg yang lain*/
+ /* backdrop-filter: blur(4px); */
 }
 
-/* Hero */
-
-.hero a{
-      color: white;
+.navbar .nav-link {
+ /* text-transform: uppercase; */
+ color: white;
+ text-decoration: none;
+ font-size: 16px;
 }
 
-.hero a:hover{
-      color: black;
+.navbar .nav-link:hover {
+     text-decoration: underline; /*Efek hover untuk link */
+    color: black;
 }
 
 /* Home */
@@ -133,7 +135,6 @@ body {
 /* Enthusiast */
 .enthusiast {
       margin-top: 4rem;
-      background-color: var(--blue);
 }
 
 .enthusiast .card {
@@ -288,7 +289,7 @@ footer li {
       text-shadow: var(--shadow1);
       font-weight: bold;
       font-size: 2rem;
-      /* margin-top: -1rem; */
+      margin-top: 3rem;
       margin-bottom: 2.5rem;
 }
 
