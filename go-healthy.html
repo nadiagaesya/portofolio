@@ -19,6 +19,9 @@
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&family=Rochester&display=swap"
             rel="stylesheet">
+
+      <!-- AOS -->
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -53,7 +56,8 @@
       <!-- Gohealthy -->
       <section id="go-healthy" class="go-healthy">
             <div class="container">
-                  <div class="row mb-5" id="text-title">
+                  <div class="row mb-5" id="text-title" data-aos="zoom-in" data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000">
                         <div class="text-center">
                               <h2>Go Healthy</h2>
                               <p>UI/UX Design, Frontend Development</p>
@@ -62,18 +66,11 @@
                   </div>
 
                   <div class="row" id="text-deskripsi">
-                        <h2>Deskripsi Project</h2>
-                        <p>Go-Healthy is a digital application designed to make it easier for users to manage their
-                              health, from monitoring physical activity, recording nutrition, to reminding medical
-                              consultation schedules. As a <strong>UI/UX Designer</strong>, my focus is on creating an
-                              intuitive, aesthetic, and easy-to-use interface, with a seamless user experience in mind.
-                              Meanwhile, as a <strong> Frontend Developer </strong>, I am responsible for translating
-                              those designs into responsive and functional code, ensuring that the app is accessible on
-                              a variety of devices with optimal performance. The project reflects a collaboration
-                              between design and development to deliver innovative and user-friendly health solutions.
-                        </p>
+                        <h2></h2>
+                        <p></p>
                         <center>
-                              <div class="hover-overlay">
+                              <div class="hover-overlay" data-aos="zoom-in" data-aos-offset="400" data-aos-delay="50"
+                                    data-aos-duration="1000">
                                     <img src="img/portofolio/Beranda.png" alt="Frontend Gohealthy">
                                     <a class="btn btn-overlay" href="https://renowidi.github.io/UAS-DPW-NIH/">Lihat
                                           Projek</a>
@@ -81,7 +78,8 @@
                         </center>
                   </div>
 
-                  <div class="row" id="text-job">
+                  <div class="row" id="text-job" data-aos="zoom-in" data-aos-offset="300" data-aos-delay="50"
+                        data-aos-duration="1000">
                         <h2>My Job</h2>
                         <ol>
                               <b>
@@ -107,8 +105,10 @@
       <!-- Next -->
       <section id="next" class="next">
             <div class="container">
-                  <h4 class="text-next text-white text-center mb-5" style="margin-top: 2rem;">next</h4>
-                  <div class="row">
+                  <h4 class="text-next text-white text-center mb-5" style="margin-top: 2rem;" data-aos="zoom-in"
+                        data-aos-offset="300" data-aos-delay="50" data-aos-duration="1000">next</h4>
+                  <div class="row" data-aos="zoom-in" data-aos-offset="300" data-aos-delay="50"
+                        data-aos-duration="1000">
                         <center>
                               <div class="hover-overlay">
                                     <img src="img/portofolio/masuk-pendaftaran-magang.png"
@@ -139,6 +139,39 @@
                   </div>
             </div>
       </footer>
+
+      <!-- JS AOS -->
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+            AOS.init();
+      </script>
+
+      <!-- JS GSAP -->
+      <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+      <!-- CDN plugins -->
+      <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+
+      <!-- Script Untuk gsap -->
+      <script>
+            // gsap tolong animasikan elemen class home tag img mulai dari posisi awalnya -100, mulai dari opacitynya 0 selama duration 1 detik ke posisi saat ini
+            // gsap.from('.home img', {duration:1, y:-100, opacity:0, ease: 'bounce'})
+            // gsap.from('.home img', { duration: 1, rotateY: 360, opacity: 0 })
+
+            // Kalau mau tambah plugin tinggal tambah menggunakan , misalnya (TextPlugin, dst)
+            gsap.registerPlugin(TextPlugin)
+
+            // Untuk animasi tulisan
+            gsap.to('.go-healthy #text-deskripsi h2', { duration: 2, delay: 0, text: 'Deskripsi Project' })
+            gsap.to('.go-healthy #text-deskripsi p', { duration: 8, delay: 0, text: 'Go-Healthy is a digital application designed to make it easier for users to manage their health, from monitoring physical activity, recording nutrition, to reminding medical consultation schedules. As a <strong>UI/UX Designer</strong>, my focus is on creating an intuitive, aesthetic, and easy-to-use interface, with a seamless user experience in mind. Meanwhile, as a <strong> Frontend Developer </strong>, I am responsible for translating those designs into responsive and functional code, ensuring that the app is accessible on a variety of devices with optimal performance. The project reflects a collaboration between design and development to deliver innovative and user-friendly health solutions.' })
+            // gsap.to('.go-healthy .text-p', { duration: 2, delay: 0, text: 'UI/UX Design, Frontend Development' })
+            // gsap.to('.go-healthy .text-span', { duration: 2, delay: 0, text: 'Project Class' })
+
+
+            gsap.from('.navbar', { duration: 1.5, y: '-100%', opacity: 0, ease: 'bounce' })
+            // gsap.from('.home img', {duration:1, y: '-100%', opacity:0, ease: 'bounce'})
+            // gsap.from('.left', { duration: 1.5, y: '-100%', opacity: 0, ease: 'bounce' })
+      </script>
 
       <!-- JS Bootstrap -->
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
