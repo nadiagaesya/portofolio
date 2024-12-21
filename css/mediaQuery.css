@@ -1,29 +1,7 @@
 /* Media Query (Responsive) */
 
-/* 1. Laptop besar (15 inch ke atas) */
-/* Gaya untuk layar besar seperti laptop besar atau monitor */
-@media (min-width: 1200px) {
-}
-
-/* 2. Laptop standar dan kecil */
-/* Gaya untuk layar laptop standar dan kecil */
-@media (min-width: 992px) and (max-width: 1199px) {
-}
-
-/* 3. Tablet (portrait & landscape) */
-/* Gaya untuk layar tablet */
-@media (min-width: 768px) and (max-width: 991px) {
-}
-
-/* 4. Smartphone besar (phablet) */
-/* Gaya untuk smartphone besar */
-@media (min-width: 576px) and (max-width: 767px) {
-}
-
-
-/* 5. Smartphone kecil */
-/* Gaya untuk smartphone kecil */
-@media (max-width: 575px) {
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
 /* Navbar */
  .sticky-top {
       overflow: hidden;
@@ -114,6 +92,7 @@
       align-items: center;
       margin-top: 2.5rem;
       margin-left: -1.5rem;
+      width: 100%;
 }
 
 /* Enthusiast */
@@ -376,5 +355,799 @@ footer li {
       list-style: none;
       display: inline;
       margin: 0.5rem;
+}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+/* Home */
+.home .left {
+      margin-left: -5rem;
+      margin-top: -4rem;
+}
+
+.home .left span{
+      font-family: "Rochester", cursive;
+      font-size: 1.2rem;
+      text-shadow: var(--shadow);
+}
+
+.home .left h2{
+      font-family: "Rochester", cursive;
+      text-transform: capitalize;
+      font-size: 4rem;
+      text-shadow: var(--shadow);
+}
+
+.home .left p{
+      text-transform: capitalize;
+      font-size: 0.7rem;
+      text-shadow: var(--shadow);
+      text-align: center;
+      margin-left: -1.5rem;
+}
+
+.home .right img {
+      position: relative;
+      margin-top: -1.5rem;
+      width: 18rem;
+      height: 18rem;
+      margin-left: 2rem;
+}
+
+.home #kontak {
+      margin-left: -2rem !important;
+}
+
+.home #kontak .port {
+      margin-left: 1rem !important;
+}
+
+/* About */
+.about {
+      margin-top: 1rem;
+}
+
+.about h2 {
+      color: white;
+      text-shadow: var(--shadow1);
+      font-weight: bold;
+      font-size: 1.7rem;
+      text-align: center;
+      margin-top: -2rem;
+      margin-bottom: 2rem;
+}
+
+.about img {
+      padding: 2rem;
+      width: 18rem;
+      margin-left: -4rem;
+}
+
+.about h3 {
+      color: white;
+      text-align: center;
+      font-size: 1rem;
+      font-weight: 300;
+      text-shadow: var(--shadow1);
+      position: relative;
+      align-items: center;
+      margin-top: 4rem;
+      margin-left: 1rem;
+      width: 100%;
+}
+
+/* Enthusiast */
+.enthusiast {
+      margin-top: 4rem;
+      background-color: var(--blue);
+}
+
+.enthusiast .card {
+      background-color: none;
+      width: 100%;
+      height: 100%;
+      color: white;
+      padding: 0rem;
+      height: 17rem;
+      border: none;
+}
+
+.enthusiast .card-left {
+      margin-left: -3rem;
+      width: 100%;
+      height: 100%;
+}
+
+.enthusiast .card-right {
+      margin-left: 2.5rem;
+      width: 100%;
+      height: 100%;
+}
+
+.enthusiast p {
+      font-size: 0.9rem;
+      text-align: center;
+      align-items: center;
+      margin-left: -1rem;
+}
+
+.enthusiast h5 {
+      font-weight: bold;
+      font-size: 1.3rem;
+}
+
+/* Membuat garis vertikal */
+.enthusiast .col-lg-6:not(:last-child) {
+    position: relative;
+}
+
+.enthusiast .col-lg-6:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2px; /* Ketebalan garis */
+    height: 100%;
+    background-color: white; /* Warna garis */
+}
+
+/* Skills */
+.skill {
+      margin-top: 6rem;
+}
+
+.skill h2 {
+      color: white;
+      text-shadow: var(--shadow1);
+      font-weight: bold;
+      font-size: 1.7rem;
+      margin-bottom: 3rem;
+}
+
+.skill img {
+      width: 7rem;
+      height: 7rem;
+}
+
+/* Experience */
+.experience {
+      margin-top: 4rem;
+}
+
+.experience .row {
+      background-color: var(--blue);
+      /* border-radius: 2rem; */
+      padding: 2rem;
+      height: auto;
+}
+
+.experience h2 {
+      color: white;
+      text-shadow: var(--shadow1);
+      font-weight: bold;
+      font-size: 1.7rem;
+      margin-top: 2rem;
+}
+
+.experience .card {
+      background-color: unset;
+      border: none;
+      color: white;
+      padding: 2rem;
+      margin-top: -2rem;
+}
+
+.experience p {
+      font-size: 0.9rem;
+}
+
+.experience .card-end {
+      text-align: end !important;
+}
+
+.experience .card-text {
+      text-align: justify;
+      margin-left: -4rem;
+      margin-right: -2rem;
+}
+
+/* Portofolio */
+.portofolio {
+      margin-top: 2rem;
+}
+
+.portofolio .row {
+      display: flex;
+      height: auto;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      gap: 25px;
+}
+
+.portofolio .baris-dua {
+      margin-top: -10rem;
+}
+
+.portofolio h2 {
+      color: white;
+      text-shadow: var(--shadow1);
+      font-weight: bold;
+      font-size: 1.7rem;
+      margin-top: -2rem;
+      margin-bottom: 2.5rem;
+}
+
+.portofolio .card {
+      position: relative;
+      width: 10rem;
+      height: 25rem;
+      /* border-radius: 16px; */
+      overflow: hidden;
+      transition: 0.5s;
+      cursor: pointer;
+      background: none;
+      border: none;
+}
+
+.portofolio img {
+      width: auto;
+      height: auto;
+      object-fit: cover;
+      pointer-events: none;
+      transition: 0.5s;
+}
+
+/* Layer opacity */
+.portofolio .card .layer {
+      background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+      position: absolute;
+      bottom: 10rem;
+      left: 0;
+      width: 100%;
+      height: 75%;
+      opacity: 0;
+      transition: 0.3s;
+
+}
+
+.portofolio .card .info {
+      position: absolute;
+      width: 100%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 15px;
+      opacity: 0;
+      transition: 0.5s bottom, 1.75s opacity;
+}
+
+.portofolio .info p {
+      font-size: 0.8rem;
+      color: rgb(211, 204, 204);
+}
+
+.portofolio .info h3 {
+      font-size: 1rem;
+      justify-content: center;
+      align-items: center;
+      /* margin-left: 4rem; */
+      color: white;
+}
+
+.portofolio .card:hover,
+.portofolio .card:hover img,
+.portofolio .card:hover layer {
+      transform: scale(1.1); /*Untuk ukuran zoom out pas kursor diarahkan ke card*/
+}
+
+.portofolio .card:hover > .layer {
+      opacity: 1;
+}
+
+.portofolio .card:hover > .info {
+      bottom: 0;
+      opacity: 1;
+}
+
+/* Contact */
+.contact {
+      margin-top: -5rem;
+}
+
+.contact .card {
+      color: white;
+      text-align: justify;
+      align-items: center;
+}
+
+.contact .card-left {
+      margin-left: -4rem;
+}
+
+.contact .card-right {
+      margin-left: 2rem;
+      width: 100%;
+}
+
+.contact li {
+      font-size: 0.9rem;
+}
+
+.contact p {
+      font-size: 0.9rem;
+      text-indent: 2rem;
+}
+
+/* Footer */
+footer {
+      position: relative;
+      width: 100%;
+      height: auto;
+      bottom: 0%;
+      left: 0%;
+      margin-top: -1rem;
+      padding: 2rem;
+      background-color: var(--blue);
+      color: white;
+      font-size: 0.9rem;
+}
+
+footer a {
+      color: var(--bg);
+      font-weight: bold;
+      text-decoration: none;
+}
+
+footer a:hover {
+      color: black;
+}
+
+footer li {
+      list-style: none;
+      display: inline;
+      margin: 0.5rem;
+}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+/* Home */
+.home .left {
+      margin-left: -1rem;
+      margin-top: -4rem;
+}
+
+.home .left span{
+      font-family: "Rochester", cursive;
+      font-size: 1.2rem;
+      text-shadow: var(--shadow);
+}
+
+.home .left h2{
+      font-family: "Rochester", cursive;
+      text-transform: capitalize;
+      font-size: 4.5rem;
+      text-shadow: var(--shadow);
+}
+
+.home .left p{
+      text-transform: capitalize;
+      font-size: 0.9rem;
+      text-shadow: var(--shadow);
+      text-align: center;
+      margin-left: -7rem;
+}
+
+.home .right img {
+      position: relative;
+      margin-top: -1.5rem;
+      width: 18rem;
+      height: 18rem;
+      margin-left: -1rem;
+}
+
+/* .home #kontak {
+      margin-right: 2rem;
+} */
+
+.home #kontak .cont {
+      margin-left: -3.9rem !important;
+      width: auto;
+
+}
+
+.home #kontak .port {
+      margin-left: -1rem !important;
+      width: auto;
+}
+
+/* About */
+.about {
+      margin-top: 1rem;
+      width: 100%;
+}
+
+.about h2 {
+      color: white;
+      text-shadow: var(--shadow1);
+      font-weight: bold;
+      font-size: 1.7rem;
+      text-align: center;
+      margin-top: -2rem;
+      margin-bottom: 2rem;
+}
+
+.about img {
+      padding: 2rem;
+      width: 20rem;
+      margin-left: -1rem;
+}
+
+.about h3 {
+      color: white;
+      text-align: center;
+      font-size: 1.1rem;
+      font-weight: 300;
+      text-shadow: var(--shadow1);
+      position: relative;
+      align-items: center;
+      margin-top: 6.5rem;
+      margin-left: -1rem;
+      width: 100%;
+}
+
+/* Enthusiast */
+.enthusiast {
+      margin-top: 4rem;
+      background-color: var(--blue);
+}
+
+.enthusiast .card {
+      background-color: none;
+      width: 100%;
+      height: 100%;
+      color: white;
+      padding: 0rem;
+      height: 17rem;
+      border: none;
+}
+
+.enthusiast .card-left {
+      margin-left: -1rem;
+      width: 100%;
+      height: 100%;
+}
+
+.enthusiast .card-right {
+      margin-left: 2rem;
+      width: 100%;
+      height: 100%;
+}
+
+.enthusiast p {
+      font-size: 0.9rem;
+      text-align: center;
+      align-items: center;
+      margin-left: -1rem;
+}
+
+.enthusiast h5 {
+      font-weight: bold;
+      font-size: 1.3rem;
+}
+
+/* Membuat garis vertikal */
+.enthusiast .col-lg-6:not(:last-child) {
+    position: relative;
+}
+
+.enthusiast .col-lg-6:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2px; /* Ketebalan garis */
+    height: 100%;
+    background-color: white; /* Warna garis */
+}
+
+/* Skills */
+.skill {
+      margin-top: 6rem;
+}
+
+.skill h2 {
+      color: white;
+      text-shadow: var(--shadow1);
+      font-weight: bold;
+      font-size: 1.7rem;
+      margin-bottom: 3rem;
+}
+
+.skill img {
+      width: 7rem;
+      height: 7rem;
+}
+
+/* Experience */
+.experience {
+      margin-top: 4rem;
+}
+
+.experience .row {
+      background-color: var(--blue);
+      /* border-radius: 2rem; */
+      padding: 2rem;
+      height: auto;
+}
+
+.experience h2 {
+      color: white;
+      text-shadow: var(--shadow1);
+      font-weight: bold;
+      font-size: 1.7rem;
+      margin-top: 2rem;
+}
+
+.experience .card {
+      background-color: unset;
+      border: none;
+      color: white;
+      padding: 2rem;
+      margin-top: -2rem;
+}
+
+.experience p {
+      font-size: 0.9rem;
+}
+
+.experience .card-end {
+      text-align: end !important;
+}
+
+.experience .card-text {
+      text-align: justify;
+      margin-left: -4rem;
+      margin-right: -2rem;
+}
+
+/* Portofolio */
+.portofolio {
+      margin-top: 2rem;
+}
+
+.portofolio .row {
+      display: flex;
+      height: auto;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      gap: 25px;
+}
+
+.portofolio .baris-dua {
+      margin-top: -10rem;
+}
+
+.portofolio h2 {
+      color: white;
+      text-shadow: var(--shadow1);
+      font-weight: bold;
+      font-size: 1.7rem;
+      margin-top: -2rem;
+      margin-bottom: 2.5rem;
+}
+
+.portofolio .card {
+      position: relative;
+      width: 10rem;
+      height: 25rem;
+      /* border-radius: 16px; */
+      overflow: hidden;
+      transition: 0.5s;
+      cursor: pointer;
+      background: none;
+      border: none;
+}
+
+.portofolio img {
+      width: auto;
+      height: auto;
+      object-fit: cover;
+      pointer-events: none;
+      transition: 0.5s;
+}
+
+/* Layer opacity */
+.portofolio .card .layer {
+      background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+      position: absolute;
+      bottom: 10rem;
+      left: 0;
+      width: 100%;
+      height: 75%;
+      opacity: 0;
+      transition: 0.3s;
+
+}
+
+.portofolio .card .info {
+      position: absolute;
+      width: 100%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 15px;
+      opacity: 0;
+      transition: 0.5s bottom, 1.75s opacity;
+}
+
+.portofolio .info p {
+      font-size: 0.8rem;
+      color: rgb(211, 204, 204);
+}
+
+.portofolio .info h3 {
+      font-size: 1rem;
+      justify-content: center;
+      align-items: center;
+      /* margin-left: 4rem; */
+      color: white;
+}
+
+.portofolio .card:hover,
+.portofolio .card:hover img,
+.portofolio .card:hover layer {
+      transform: scale(1.1); /*Untuk ukuran zoom out pas kursor diarahkan ke card*/
+}
+
+.portofolio .card:hover > .layer {
+      opacity: 1;
+}
+
+.portofolio .card:hover > .info {
+      bottom: 0;
+      opacity: 1;
+}
+
+/* Contact */
+.contact {
+      margin-top: -5rem;
+}
+
+.contact .card {
+      color: white;
+      text-align: justify;
+      align-items: center;
+}
+
+.contact .card-left {
+      margin-left: -2rem;
+}
+
+.contact .card-right {
+      margin-left: 2rem;
+      width: 100%;
+}
+
+.contact li {
+      font-size: 0.9rem;
+}
+
+.contact p {
+      font-size: 0.9rem;
+      text-indent: 2rem;
+}
+
+/* Footer */
+footer {
+      position: relative;
+      width: 100%;
+      height: auto;
+      bottom: 0%;
+      left: 0%;
+      margin-top: -1rem;
+      padding: 2rem;
+      background-color: var(--blue);
+      color: white;
+      font-size: 0.9rem;
+}
+
+footer a {
+      color: var(--bg);
+      font-weight: bold;
+      text-decoration: none;
+}
+
+footer a:hover {
+      color: black;
+}
+
+footer li {
+      list-style: none;
+      display: inline;
+      margin: 0.5rem;
+}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+/* Home */
+.home .left {
+      margin-left: -1rem;
+      margin-top: -2rem;
+}
+
+.home .left p{
+      text-transform: capitalize;
+      font-size: 0.9rem;
+      text-shadow: var(--shadow);
+      text-align: center;
+      margin-left: -12rem;
+}
+
+.home #kontak .cont {
+      margin-left: -10rem !important;
+      width: auto;
+
+}
+
+.home #kontak .port {
+      margin-left: -1rem !important;
+      width: auto;
+}
+
+.home .right img {
+      position: relative;
+      margin-top: -3rem;
+      width: 20rem;
+      height: 20rem;
+      margin-left: 1rem;
+}
+
+/* About */
+.about img {
+      padding: 2rem;
+      width: 25rem;
+      margin-left: 2rem;
+}
+
+/* Portofolio */
+.portofolio .baris-dua {
+      margin-top: 0rem;
+}
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+/* Home */
+.home .left p{
+      text-transform: capitalize;
+      font-size: 0.9rem;
+      text-shadow: var(--shadow);
+      text-align: center;
+      margin-left: -18rem;
+}
+
+.home #kontak .cont {
+      margin-left: -16rem !important;
+      width: auto;
+
+}
+
+.home #kontak .port {
+      margin-left: -1rem !important;
+      width: auto;
+}
+
+.home .right img {
+      position: relative;
+      margin-top: -3rem;
+      width: 25rem;
+      height: 25rem;
+      margin-left: 1rem;
 }
 }
