@@ -1,28 +1,20 @@
+:root{
+      --blue:#2C4E80;
+      --gray: #ECDCF4;
+      --dark: #000000;
+       --shadow: 0 2px 6px rgba(0,0,0,0.5); /* rgb(0 0 0 / 0.5) */
+      --shadow1: 2 8px 3px rgba(0,0,0,0.5); /* rgb(0 0 0 / 0.5) */
+
+        /* font-family: "Roboto Slab", serif; */
+        /* font-family: "Poppins", sans-serif; */
+        /* font-family: "Rochester", cursive; */
+
+}
+
 /* Media Query (Responsive) */
 
-/* 1. Laptop besar (15 inch ke atas) */
-/* Gaya untuk layar besar seperti laptop besar atau monitor */
-@media (min-width: 1200px) {
-}
-
-/* 2. Laptop standar dan kecil */
-/* Gaya untuk layar laptop standar dan kecil */
-@media (min-width: 992px) and (max-width: 1199px) {
-}
-
-/* 3. Tablet (portrait & landscape) */
-/* Gaya untuk layar tablet */
-@media (min-width: 768px) and (max-width: 991px) {
-}
-
-/* 4. Smartphone besar (phablet) */
-/* Gaya untuk smartphone besar */
-@media (min-width: 576px) and (max-width: 767px) {
-}
-
-/* 5. Smartphone kecil */
-/* Gaya untuk smartphone kecil */
-@media (max-width: 575px) { 
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
 /* GoHealthy */
 .go-healthy {
       display: flex;
@@ -33,15 +25,19 @@
 .go-healthy #text-title {
       width: 100%;
       height: auto;
-      padding: 5rem;
+      padding: 1rem;
+      margin-left: 0.1rem;
+      text-align: center;
+      align-items: center;
 }
 
 .go-healthy #text-title h2 {
-      font-size: 3rem;
+      font-size: 1.5rem;
+      margin-top: 1rem;
 }
 
 .go-healthy #text-title p {
-      font-size: 1rem;
+      font-size: 0.8rem;
       margin-top: 0.1rem;
       margin-bottom: 0;
 }
@@ -57,12 +53,12 @@
 }
 
 .go-healthy #text-deskripsi h2 {
-      font-size: 2rem;
+      font-size: 1.3rem;
       margin-bottom: 1rem;
 }
 
 .go-healthy #text-deskripsi p {
-      font-size: 0.9rem;
+      font-size: 0.8rem;
       margin-bottom: 1.5rem;
       text-indent: 2rem;
       text-align: justify;
@@ -75,11 +71,12 @@
 
 .go-healthy #text-job h2 {
       margin-top: 2rem;
-      font-size: 2rem;
+      font-size: 1.3rem;
       margin-bottom: 1rem;
 }
+
 .go-healthy #text-job li {
-      font-size: 0.9rem;
+      font-size: 0.8rem;
       text-align: justify;
       width: 90%;
 }
@@ -87,12 +84,13 @@
 .go-healthy .workflow {
       width: 70%;
       height: 90%;
+      margin-left: 2rem;
 }
 
 .go-healthy .garis {
     margin-top: 2rem !important;
     width: 100%;
-    margin-left: 1rem;
+    margin-left: 1rem !important;
 }
 
 /* Gambar agar memenuhi elemen */
@@ -151,11 +149,11 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: #ffffff;
-    color: #000;
+    background: var(--blue);
+    color: white;
     border: none;
     padding: 0.5rem 1rem;
-    font-size: 1rem;
+    font-size: 0.6rem;
     font-weight: bold;
     cursor: pointer;
     opacity: 0; /* Sembunyikan tombol awalnya */
@@ -175,7 +173,7 @@
 
 /* Gambar agar memenuhi elemen */
 .next img {
-    width: 70%; /* Gambar memenuhi lebar container */
+    width: 80%; /* Gambar memenuhi lebar container */
     height: 100%; /* Jaga proporsi gambar */
      display: block; /*Hilangkan spasi tambahan di bawah gambar */
     /* border-radius: 1; Hapus radius jika diperlukan */
@@ -187,7 +185,7 @@
     position: relative;
     display: inline-block;
     text-decoration: none;
-    width: 70%; /* Mengikuti ukuran gambar */
+    width: 80%; /* Mengikuti ukuran gambar */
     /* margin-left: 5%; Sama seperti gambar */
     /* border-radius: 1%; Sama seperti gambar */
     overflow: hidden; /* Untuk memastikan elemen dalamnya tidak keluar */
@@ -195,7 +193,7 @@
 
 
 .next .row .hover-overlay img {
-    width: 70%;
+    width: 80%;
     box-shadow: var(--shadow);
     /* border-radius: 1%; */
     /* transition: transform 0.3s ease-in-out; Efek zoom */
@@ -210,8 +208,8 @@
     content: "";
     position: absolute;
     top: 0;
-    left: 15%;
-    width: 70%;
+    left: 10%;
+    width: 80%;
     height: 100%;
     background: rgba(0, 0, 0, 0.5); /* Transparansi hitam */
     opacity: 0;
@@ -230,11 +228,11 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: #ffffff;
-    color: #000;
+    background: var(--blue);
+    color: white;
     border: none;
     padding: 0.5rem 1rem;
-    font-size: 1rem;
+    font-size: 0.6rem;
     font-weight: bold;
     cursor: pointer;
     opacity: 0; /* Sembunyikan tombol awalnya */
@@ -275,6 +273,154 @@ footer li {
       list-style: none;
       display: inline;
       margin: 0.5rem;
+}
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) { 
+.go-healthy #text-title {
+      width: 100%;
+      height: auto;
+      padding: 2rem;
+      margin-left: 0.1rem;
+      text-align: center;
+      align-items: center;
+}
+
+.go-healthy #text-title h2 {
+      font-size: 2.4rem;
+      margin-top: 3rem;
+}
+
+.go-healthy #text-job li {
+      font-size: 0.9rem;
+      text-align: justify;
+      width: 90%;
+}
+
+.go-healthy .garis {
+    margin-top: 2rem !important;
+    width: 100%;
+}
+
+/* Tombol klik */
+.go-healthy .hover-overlay .btn-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--blue);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 0.6rem;
+    font-weight: bold;
+    cursor: pointer;
+    opacity: 0; /* Sembunyikan tombol awalnya */
+    transition: opacity 0.3s ease-in-out;
+    /* border-radius: 5px; */
+    z-index: 1; /* Pastikan tombol berada di atas overlay */
+}
+
+/* class gohealthy yang di dalam class next */
+.next .text-next {
+    margin-top: 1rem !important;
+}
+
+/* Tombol klik */
+.next .row .hover-overlay .btn-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--blue);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 0.6rem;
+    font-weight: bold;
+    cursor: pointer;
+    opacity: 0; /* Sembunyikan tombol awalnya */
+    transition: opacity 0.3s ease-in-out;
+    /* border-radius: 5px; */
+    z-index: 1; /* Pastikan tombol berada di atas overlay */
+}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  /* Tombol klik */
+.go-healthy .hover-overlay .btn-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--blue);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    opacity: 0; /* Sembunyikan tombol awalnya */
+    transition: opacity 0.3s ease-in-out;
+    /* border-radius: 5px; */
+    z-index: 1; /* Pastikan tombol berada di atas overlay */
+}  
+
+/* Tombol klik */
+.next .row .hover-overlay .btn-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--blue);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    opacity: 0; /* Sembunyikan tombol awalnya */
+    transition: opacity 0.3s ease-in-out;
+    /* border-radius: 5px; */
+    z-index: 1; /* Pastikan tombol berada di atas overlay */
+}
+}
+
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+.go-healthy #text-deskripsi p {
+      font-size: 0.9rem;
+      margin-bottom: 1.5rem;
+      text-indent: 2rem;
+      text-align: justify;
+}
+
+.go-healthy #text-job li {
+      font-size: 0.9rem;
+      text-align: justify;
+      width: 90%;
+}
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+.go-healthy #text-deskripsi p {
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+      text-indent: 2rem;
+      text-align: justify;
+}
+
+.go-healthy #text-job li {
+      font-size: 1rem;
+      text-align: justify;
+      width: 90%;
 }
 
 }
