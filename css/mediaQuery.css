@@ -21,7 +21,7 @@
 
 /* Home */
 .home .left {
-      margin-left: 1.5rem;
+      margin-left: 1rem;
       margin-top: -4rem;
       margin-bottom: 0rem;
       width: 50%;
@@ -67,34 +67,32 @@
       color: white;
       text-shadow: var(--shadow1);
       font-weight: bold;
-      font-size: 1.5rem;
-      margin-top: -2rem;
-      margin-bottom: 2rem;
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
 }
 
 .about img {
       padding: 2rem;
-      width: 15rem;
-      margin-left: -1rem;
+      width: 13rem;
+      margin-left: -2rem;
 }
 
 .about h3 {
       color: white;
       text-align: center;
-      font-size: 1rem;
+      font-size: 0.7rem;
       font-weight: 300;
       text-shadow: var(--shadow1);
       position: relative;
       align-items: center;
       margin-top: 2.5rem;
-      margin-left: -1.5rem;
+      margin-left: -0.9rem;
       width: 100%;
 }
 
 /* Enthusiast */
 .enthusiast {
-      margin-top: 4rem;
-      background-color: var(--blue);
+      margin-top: 2rem;
 }
 
 .enthusiast .card {
@@ -111,12 +109,11 @@
 }
 
 .enthusiast .card-right {
-      margin-left: -0.1rem;
+      margin-left: 0.6rem;
 }
 
 .enthusiast p {
-      font-size: 0.8rem;
-      /* padding: 0.5rem; */
+      font-size: 0.6rem;
       text-align: center;
       align-items: center;
       margin-left: -1rem;
@@ -124,7 +121,7 @@
 
 .enthusiast h5 {
       font-weight: bold;
-      font-size: 1rem;
+      font-size: 0.8rem;
 }
 
 /* Membuat garis vertikal */
@@ -135,7 +132,7 @@
 .enthusiast .col-lg-6:not(:last-child)::after {
     content: "";
     position: absolute;
-    top: 4rem;
+    top: 1rem;
     right: 0;
     width: 2px; /* Ketebalan garis */
     height: 100%;
@@ -144,15 +141,15 @@
 
 /* Skills */
 .skill {
-      margin-top: 7rem;
+      margin-top: 3rem;
 }
 
 .skill h2 {
       color: white;
       text-shadow: var(--shadow1);
       font-weight: bold;
-      font-size: 1.5rem;
-      margin-bottom: 3rem;
+      font-size: 1.3rem;
+      margin-bottom: 2rem;
 }
 
 .skill img {
@@ -162,7 +159,7 @@
 
 /* Experience */
 .experience {
-      margin-top: 4rem;
+      margin-top: 3rem;
 }
 
 .experience .row {
@@ -176,7 +173,7 @@
       color: white;
       text-shadow: var(--shadow1);
       font-weight: bold;
-      font-size: 1.5rem;
+      font-size: 1.3rem;
       margin-top: 2rem;
 }
 
@@ -217,14 +214,14 @@
 }
 
 .portofolio .baris-dua {
-      margin-top: -10rem;
+      margin-top: -11rem;
 }
 
 .portofolio h2 {
       color: white;
       text-shadow: var(--shadow1);
       font-weight: bold;
-      font-size: 1.5rem;
+      font-size: 1.3rem;
       margin-top: -2rem;
       margin-bottom: 2.5rem;
 }
@@ -233,7 +230,6 @@
       position: relative;
       width: 10rem;
       height: 25rem;
-      /* border-radius: 16px; */
       overflow: hidden;
       transition: 0.5s;
       cursor: pointer;
@@ -314,8 +310,12 @@
       align-items: center;
 }
 
+.contact h5 {
+      font-size: 1rem;
+}
 .contact li {
       font-size: 0.8rem;
+      margin-left: -1rem;
 }
 
 .contact p {
