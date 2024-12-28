@@ -49,21 +49,6 @@ body {
       height: 28rem;
 }
 
-.home a {
-      background-color: var(--gray);
-      color: var(--blue);
-}
-
-.home a:hover {
-      background-color: var(--blue);
-      color: white;
-}
-
-.home #contact-btn {
-      align-items: end;
-      justify-items: end;
-}
-
 .home .left {
       margin-top: 2rem;
       padding: 4rem;
@@ -96,8 +81,8 @@ body {
 
 .home .right img {
       position: relative;
-      width: 24rem;
-      height: 23rem;
+      width: 20rem;
+      height: 20rem;
       margin-left: 2rem;
 }
 
@@ -106,7 +91,7 @@ body {
       margin-top: 4rem;
 }
 
-.about h2 {
+.about .row h2 {
       color: white;
       text-shadow: var(--shadow1);
       font-weight: bold;
@@ -115,16 +100,16 @@ body {
       margin-bottom: 2rem;
 }
 
-.about img {
+.about .left img {
       padding: 2rem;
       width: 30rem;
       margin-left: 4rem;
 }
 
-.about h3 {
+.about .right h3 {
       color: white;
       text-align: center;
-      font-size: 1.5rem;
+      font-size: 1.3rem;
       font-weight: 300;
       text-shadow: var(--shadow1);
       position: relative;
@@ -205,7 +190,6 @@ body {
 
 .experience .row {
       background-color: var(--blue);
-      /* border-radius: 2rem; */
       padding: 2rem;
       height: 18rem;
 }

@@ -1120,6 +1120,23 @@ footer li {
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
 /* Home */
+.home .left {
+      margin-top: 2rem;
+      padding: 4rem;
+}
+
+.home .left span{
+      font-family: "Rochester", cursive;
+      font-size: 2rem;
+      text-shadow: var(--shadow);
+}
+
+.home .left h2{
+      font-family: "Rochester", cursive;
+      text-transform: capitalize;
+      font-size: 6rem;
+      text-shadow: var(--shadow);
+}
 .home .left p{
       text-transform: capitalize;
       font-size: 0.9rem;
@@ -1128,22 +1145,188 @@ footer li {
       margin-left: -18rem;
 }
 
-.home #kontak .cont {
-      margin-left: -16rem !important;
-      width: auto;
-
-}
-
-.home #kontak .port {
-      margin-left: -1rem !important;
-      width: auto;
-}
-
 .home .right img {
       position: relative;
-      margin-top: -3rem;
-      width: 25rem;
-      height: 25rem;
-      margin-left: 1rem;
+      width: 20rem;
+      height: 20rem;
+      margin-left: 2rem;
+}
+
+/* Enthusiast */
+.enthusiast {
+      margin-top: 4rem;
+}
+
+.enthusiast .card {
+      background-color: var(--blue);
+      color: white;
+      padding: 1rem;
+      height: 17rem;
+      border: none;
+}
+
+.enthusiast .card-left {
+      margin-left: -1rem;
+}
+
+.enthusiast .card-right {
+      margin-left: 2rem;
+      margin-right: -5rem;
+}
+
+.enthusiast p {
+      font-size: 1rem;
+      padding: 1rem;
+      text-align: center;
+      align-items: center;
+}
+
+.enthusiast h5 {
+      font-weight: bold;
+}
+
+/* Membuat garis vertikal */
+.enthusiast .col-lg-6:not(:last-child) {
+    position: relative;
+}
+
+.enthusiast .col-lg-6:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2px; /* Ketebalan garis */
+    height: 100%;
+    background-color: white; /* Warna garis */
+}
+
+/* Skills */
+.skill {
+      margin-top: 4rem;
+}
+
+.skill h2 {
+      color: white;
+      text-shadow: var(--shadow1);
+      font-weight: bold;
+      font-size: 2rem;
+      margin-bottom: 3rem;
+}
+
+.skill img {
+      width: 8rem;
+      height: 8rem;
+      margin-bottom: 2rem;
+}
+
+/* Experience */
+.experience {
+      margin-top: 4rem;
+}
+
+.experience .row {
+      background-color: var(--blue);
+      padding: 2rem;
+      height: 18rem;
+}
+
+.experience h2 {
+      color: white;
+      text-shadow: var(--shadow1);
+      font-weight: bold;
+      font-size: 2rem;
+      margin-top: 2rem;
+}
+
+.experience .card {
+      background-color: unset;
+      border: none;
+      color: white;
+      padding: 2rem;
+}
+
+.experience .card-end {
+      text-align: end !important;
+}
+
+.experience .card-text {
+      text-align: justify;
+      margin-left: -5rem;
+}
+
+/* Portofolio */
+.portofolio .row {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      gap: 25px;
+}
+
+.portofolio h2 {
+      color: white;
+      text-shadow: var(--shadow1);
+      font-weight: bold;
+      font-size: 2rem;
+      margin-top: 3rem;
+      margin-bottom: 2.5rem;
+}
+
+/* Contact */
+.contact {
+      margin-top: 1rem;
+}
+
+.contact .card {
+      background-color: unset;
+      border: none;
+      color: white;
+      text-align: justify;
+      align-items: center;
+}
+
+.contact .card.card-title {
+      font-size: 1.3rem;
+}
+
+.contact .card-left ul li {
+      font-size: 1rem;
+}
+
+.contact .card-right .card-text {
+      font-size: 1rem;
+}
+
+/* Footer */
+footer {
+      position: relative;
+      width: 100%;
+      bottom: 0%;
+      left: 0%;
+      margin-top: 4rem;
+      padding: 2rem;
+      background-color: var(--blue);
+      color: white;
+}
+
+footer a {
+      color: var(--bg);
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 1rem;
+}
+
+footer a:hover {
+      color: black;
+}
+
+footer li {
+      list-style: none;
+      display: inline;
+      margin: 0.5rem;
+}
+
+footer small {
+      font-size: 1rem;
 }
 }
