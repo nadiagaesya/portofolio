@@ -392,20 +392,12 @@ footer .row li {
       margin-left: 2rem;
 }
 
-.home #kontak {
-      margin-left: -2rem !important;
-}
-
-.home #kontak .port {
-      margin-left: 1rem !important;
-}
-
 /* About */
 .about {
       margin-top: 1rem;
 }
 
-.about h2 {
+.about .row h2 {
       color: white;
       text-shadow: var(--shadow1);
       font-weight: bold;
@@ -415,13 +407,13 @@ footer .row li {
       margin-bottom: 2rem;
 }
 
-.about img {
+.about .left img {
       padding: 2rem;
       width: 18rem;
-      margin-left: -4rem;
+      margin-left: 0.9rem;
 }
 
-.about h3 {
+.about .right h3 {
       color: white;
       text-align: center;
       font-size: 1rem;
@@ -429,8 +421,8 @@ footer .row li {
       text-shadow: var(--shadow1);
       position: relative;
       align-items: center;
-      margin-top: 4rem;
-      margin-left: 1rem;
+      margin-top: 4.5rem;
+      margin-left: -3rem;
       width: 100%;
 }
 
@@ -505,6 +497,7 @@ footer .row li {
 .skill img {
       width: 7rem;
       height: 7rem;
+      margin-bottom: 2rem;
 }
 
 /* Experience */
@@ -563,7 +556,7 @@ footer .row li {
       gap: 25px;
 }
 
-.portofolio .baris-dua {
+.portofolio .row .baris-dua {
       margin-top: -10rem;
 }
 
@@ -1151,6 +1144,37 @@ footer li {
       width: 20rem;
       height: 20rem;
       margin-left: 2rem;
+}
+
+/* About */
+.about {
+      margin-top: 4rem;
+}
+
+.about .row h2 {
+      color: white;
+      text-shadow: var(--shadow1);
+      font-weight: bold;
+      font-size: 2rem;
+      margin-top: -2rem;
+      margin-bottom: 2rem;
+}
+
+.about .left img {
+      padding: 2rem;
+      width: 30rem;
+      margin-left: 4rem;
+}
+
+.about .right h3 {
+      color: white;
+      text-align: center;
+      font-size: 1.3rem;
+      font-weight: 300;
+      text-shadow: var(--shadow1);
+      position: relative;
+      align-items: center;
+      margin-top: 10rem;
 }
 
 /* Enthusiast */
