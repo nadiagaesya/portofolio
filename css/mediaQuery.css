@@ -29,7 +29,7 @@
 
 .home .left span{
       font-family: "Rochester", cursive;
-      font-size: 1rem;
+      font-size: 0.8rem;
       text-shadow: var(--shadow);
       margin-left: -2rem;
 }
@@ -37,14 +37,14 @@
 .home .left h2{
       font-family: "Rochester", cursive;
       text-transform: capitalize;
-      font-size: 2.5rem;
+      font-size: 2.2rem;
       text-shadow: var(--shadow);
       margin-left: -2rem;
 }
 
 .home .left p{
       text-transform: capitalize;
-      font-size: 0.6rem;
+      font-size: 0.5rem;
       text-shadow: var(--shadow);
       margin-left: -2rem;
 }
@@ -53,39 +53,39 @@
       width: 50%;
       position: relative;
       margin-top: -1rem;
-      width: 10rem;
-      height: 10rem;
-      margin-left: -2rem;
+      width: 8rem;
+      height: 8rem;
+      margin-left: -1rem;
 }
 
 /* About */
 .about {
-      margin-top: -13rem;
+      margin-top: -10rem;
 }
 
-.about h2 {
+.about .row h2 {
       color: white;
       text-shadow: var(--shadow1);
       font-weight: bold;
-      font-size: 1.3rem;
+      font-size: 1rem;
       margin-bottom: 1rem;
 }
 
-.about img {
+.about .left img {
       padding: 2rem;
       width: 13rem;
       margin-left: -2rem;
 }
 
-.about h3 {
+.about .right h3 {
       color: white;
       text-align: center;
-      font-size: 0.7rem;
+      font-size: 0.6rem;
       font-weight: 300;
       text-shadow: var(--shadow1);
       position: relative;
       align-items: center;
-      margin-top: 2.5rem;
+      margin-top: 3.7rem;
       margin-left: -0.9rem;
       width: 100%;
 }
@@ -121,7 +121,7 @@
 
 .enthusiast h5 {
       font-weight: bold;
-      font-size: 0.8rem;
+      font-size: 0.7rem;
 }
 
 /* Membuat garis vertikal */
@@ -148,13 +148,14 @@
       color: white;
       text-shadow: var(--shadow1);
       font-weight: bold;
-      font-size: 1.3rem;
+      font-size: 1rem;
       margin-bottom: 2rem;
 }
 
 .skill img {
-      width: 5rem;
-      height: 5rem;
+      width: 3rem;
+      height: 3rem;
+      margin-bottom: 1rem;
 }
 
 /* Experience */
@@ -173,7 +174,7 @@
       color: white;
       text-shadow: var(--shadow1);
       font-weight: bold;
-      font-size: 1.3rem;
+      font-size: 1rem;
       margin-top: 2rem;
 }
 
@@ -186,7 +187,7 @@
 }
 
 .experience p {
-      font-size: 0.7rem;
+      font-size: 0.6rem;
 }
 
 .experience .card-end {
@@ -221,7 +222,7 @@
       color: white;
       text-shadow: var(--shadow1);
       font-weight: bold;
-      font-size: 1.3rem;
+      font-size: 1rem;
       margin-top: -2rem;
       margin-bottom: 2.5rem;
 }
@@ -314,12 +315,12 @@
       font-size: 1rem;
 }
 .contact li {
-      font-size: 0.8rem;
+      font-size: 0.6rem;
       margin-left: -1rem;
 }
 
 .contact p {
-      font-size: 0.8rem;
+      font-size: 0.6rem;
       text-indent: 2rem;
 }
 
@@ -334,20 +335,20 @@ footer {
       padding: 2rem;
       background-color: var(--blue);
       color: white;
-      font-size: 0.9rem;
+      font-size: 0.6rem;
 }
 
-footer a {
+footer .row a {
       color: var(--bg);
       font-weight: bold;
       text-decoration: none;
 }
 
-footer a:hover {
+footer .row a:hover {
       color: black;
 }
 
-footer li {
+footer .row li {
       list-style: none;
       display: inline;
       margin: 0.5rem;
