@@ -285,6 +285,11 @@ body {
     left: 1rem; /* Jarak dari kiri kartu */
 }
 
+.about .grid .icon a img {
+    width: 2rem;
+    height: 2rem;
+}
+
 .about .grid .icon a {
     display: inline-flex;
     justify-content: center;
