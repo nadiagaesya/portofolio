@@ -1,373 +1,248 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>Portofolio Nadia Gaesya</title>
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Beranda</title>
 
-      <!-- CSS Internal -->
-      <link rel="stylesheet" href="css/style.css">
-      <link rel="stylesheet" href="css/mediaQuery.css">
+      <!-- CSS -->
+      <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/main.css">
 
-      <!-- Bootstrap Icons -->
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+      <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
 
-      <!-- Google Fonts -->
+      <!-- Fonts Google -->
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&family=Rochester&display=swap"
             rel="stylesheet">
 
-      <!-- AOS -->
-      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
 
-      <!-- Navbar -->
-      <section id="hero" class="hero">
-            <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
-                  <div class="container-fluid">
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                              data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03"
-                              aria-expanded="false" aria-label="Toggle navigation">
-                              <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-                              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                    <li class="nav-item mt-3">
-                                          <a class="nav-link" aria-current="page" href="#home">Home</a>
-                                    </li>
-                                    <li class="nav-item mt-3">
-                                          <a class="nav-link" href="#contact">Contact</a>
-                                    </li>
-                                    <li class="nav-item mt-3">
-                                          <a class="nav-link" href="#portofolio">Portofolio</a>
-                                    </li>
-                              </ul>
-                        </div>
-                  </div>
-            </nav>
-      </section>
-
-
-      <!-- Home -->
-      <section id="home" class="home">
-            <div class="container">
-                  <div class="row">
-                        <div class="left col-lg-7 col-md-7 col-sm-7 col-7" data-aos="fade-right"
-                              data-aos-easing="ease-out-cubic" data-aos-duration="2000">
-                              <span>Hi, i.m</span>
-                              <h2>Nadia Gaesya</h2>
-                              <center>
-                                    <p>UI/UX Designer and Frontend Dev</p>
-                              </center>
-                        </div>
-                        <div class="right col-lg-5 col-md-5 col-sm-5 col-5">
-                              <img src="img/1.png" alt="3D Girl" data-aos="fade-left" data-aos-easing="ease-out-cubic"
-                                    data-aos-duration="2000">
-                        </div>
-                  </div>
-            </div>
-      </section>
-
-      <!-- About me -->
-      <section id="about" class="about">
+      <!-- HEADER -->
+      <header class="navbar navbar-expand-lg navbar-dark">
             <div class="container-fluid">
-                  <div class="row">
-                       <center> <h2 class="text text-center" data-aos="zoom-in" data-aos-offset="200" data-aos-delay="20"
-                              data-aos-duration="1000">About Me</h2> </center>
-                        <div class="left col-lg-6 col-md-6 col-sm-6 col-6">
-                              <img src="img/2.png" alt="3D Girl" data-aos="flip-right" data-aos-easing="ease-out-cubic"
-                                    data-aos-duration="2000" data-aos-offset="200" data-aos-delay="20">
-                        </div>
-                        <div class="right col-lg-6 col-md-6 col-sm-6 col-6" data-aos="zoom-in" data-aos-offset="200"
-                              data-aos-delay="20" data-aos-duration="1000">
-                              <h3></h3>
-                        </div>
+                  <a href="#home" class="navbar-brand" id="logo">
+                        <span>Nadia Gaesya</span></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                        <nav class="navbar-nav ms-auto">
+                              <a href="#home" class="nav-link">Beranda</a>
+                              <a href="#about" class="nav-link">Tentang Saya</a>
+                              <a href="#portofolio" class="nav-link">Portofolio</a>
+                              <a href="#portofolio" class="nav-link">Kemampuan</a>
+                              <a href="#contact" class="nav-link">Kontak</a>
+                        </nav>
                   </div>
             </div>
-      </section>
+      </header>
 
-      <!-- Enthusiast -->
-      <section id="enthusiast" class="enthusiast">
-            <div class="container" data-aos="zoom-in" data-aos-offset="200" data-aos-delay="20"
-                  data-aos-duration="1000">
-                  <div class="row">
-                        <div class="col-lg-6 col-md-6 col-sm-6 col-6 mb-3 mb-sm-0">
-                              <div class="card card-left">
-                                    <div class="card-body">
-                                          <h5 class="card-title" id="ux"></h5>
-                                          <p class="card-text" id="text-ux"></p>
-                                    </div>
-                              </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-6 col-6">
-                              <div class="card card-right">
-                                    <div class="card-body">
-                                          <h5 class="card-title" id="fe"></h5>
-                                          <p class="card-text" id="text-fe"></p>
-                                    </div>
-                              </div>
-                        </div>
-                  </div>
-            </div>
-      </section>
-
-      <!-- Skills -->
-      <section id="skill" class="skill">
-            <div class="container">
-                  <h2 class="text text-center" data-aos="zoom-in" data-aos-offset="200" data-aos-delay="20"
-                        data-aos-duration="1000">Skills</h2>
-                  <center>
-                        <div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-3 justify-content-center">
-                              <div class="col mt-3">
-                                    <img src="img/html.png" alt="CSS" data-aos="flip-right"
-                                          data-aos-easing="ease-out-cubic" data-aos-duration="2000">
-                              </div>
-                              <div class="col mt-3">
-                                    <img src="img/css.png" alt="CSS" data-aos="flip-right"
-                                          data-aos-easing="ease-out-cubic" data-aos-duration="2000">
-                              </div>
-                              <div class="col mt-3">
-                                    <img src="img/js.png" alt="CSS" data-aos="flip-right"
-                                          data-aos-easing="ease-out-cubic" data-aos-duration="2000">
-                              </div>
-                              <div class="col mt-3">
-                                    <img src="img/photoshop.png" alt="CSS" data-aos="flip-right"
-                                          data-aos-easing="ease-out-cubic" data-aos-duration="2000">
-                              </div>
-                              <div class="col mt-3">
-                                    <img src="img/canva.png" alt="CSS" data-aos="flip-right"
-                                          data-aos-easing="ease-out-cubic" data-aos-duration="2000">
-                              </div>
-                              <div class="col mt-3">
-                                    <img src="img/figma.png" alt="CSS" data-aos="flip-right"
-                                          data-aos-easing="ease-out-cubic" data-aos-duration="2000">
-                              </div>
-                        </div>
-                  </center>
-            </div>
-      </section>
-
-      <!-- Experience -->
-      <section id="experience" class="experience">
-            <div class="container" data-aos="zoom-in" data-aos-offset="200" data-aos-delay="20"
-                  data-aos-duration="1000">
-                  <h2 class="text text-center">Experience</h2>
-                  <div id="experienceCarousel" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                              <!-- Slide 1 -->
-                              <div class="carousel-item active">
-                                    <div class="row">
-                                          <div class="col-lg-5 col-md-5 col-sm-5 col-5 mb-sm-0">
-                                                <div class="card">
-                                                      <div class="card-body">
-                                                            <p class="card-text card-end">Badan Pusat Statistik Provinsi
-                                                                  Riau
-                                                                  <br> Pekanbaru - Indonesia
-                                                                  <br> Jan 2022 - Feb 2022
-                                                            </p>
-                                                      </div>
-                                                </div>
-                                          </div>
-                                          <div class="col-lg-6 col-md-6 col-sm-6 col-6">
-                                                <div class="card">
-                                                      <div class="card-body">
-                                                            <p class="card-text">UI/UX Design, Frontend Development
-                                                                  (Intern)</p>
-                                                            <p class="card-text" style="text-indent: 2rem;">During an
-                                                                  internship and
-                                                                  research project at the Riau Province Central
-                                                                  Statistics Agency (BPS
-                                                                  Riau), I developed an innovative web-based system to
-                                                                  manage internship
-                                                                  applicant data effectively and efficiently. The main
-                                                                  aim of this system
-                                                                  is to automate the administrative process, reduce
-                                                                  manual errors, and
-                                                                  speed up data processing, thereby facilitating
-                                                                  coordination between BPS
-                                                                  and internship applicants.</p>
-                                                      </div>
-                                                </div>
-                                          </div>
-                                    </div>
-                              </div>
-
-
-                              <!-- Add more slides here -->
-                              <div class="carousel-item">
-                                    <div class="row">
-                                          <div class="col-lg-5 col-md-5 col-sm-5 col-5 mb-sm-0">
-                                                <div class="card">
-                                                      <div class="card-body">
-                                                            <p class="card-text card-end">Universitas Riau
-                                                                  <br> Pekanbaru - Indonesia
-                                                                  <br> Apr 2022 - Jun 2022
-                                                            </p>
-                                                      </div>
-                                                </div>
-                                          </div>
-                                          <div class="col-lg-6 col-md-6 col-sm-6 col-6">
-                                                <div class="card">
-                                                      <div class="card-body">
-                                                            <p class="card-text">UI/UX Design, Frontend Dev</p>
-                                                            <p class="card-text" style="text-indent: 2rem;">
-                                                                  During an
-                                                                  internship and
-                                                                  research project at the Riau Province Central
-                                                                  Statistics Agency (BPS
-                                                                  Riau), I developed an innovative web-based system to
-                                                                  manage internship
-                                                                  applicant data effectively and efficiently. The main
-                                                                  aim of this system
-                                                                  is to automate the administrative process, reduce
-                                                                  manual errors, and
-                                                                  speed up data processing, thereby facilitating
-                                                                  coordination between BPS
-                                                                  and internship applicants.
-                                                            </p>
-                                                      </div>
-                                                </div>
-                                          </div>
-                                    </div>
-                              </div>
-
-
-                              <!-- Add more slides here -->
-                              <div class="carousel-item">
-                                    <div class="row">
-                                          <div class="col-lg-5 col-md-5 col-sm-5 col-5 mb-sm-0">
-                                                <div class="card">
-                                                      <div class="card-body">
-                                                            <p class="card-text card-end">
-                                                                  SMA Negeri 6 Mandau<br>
-                                                                  Duri - Indonesia<br>
-                                                                  Jan 2023 - April 2023
-                                                            </p>
-                                                      </div>
-                                                </div>
-                                          </div>
-                                          <div class="col-lg-6 col-md-6 col-sm-6 col-6">
-                                                <div class="card">
-                                                      <div class="card-body">
-                                                            <p class="card-text">UI/UX Design, Frontend Dev (Intern)</p>
-                                                            <p class="card-text" style="text-indent: 2rem;">
-                                                                  Worked on designing and developing a modern web
-                                                                  application
-                                                                  for
-                                                                  managing
-                                                                  internal workflows, ensuring a seamless user
-                                                                  experience with
-                                                                  a
-                                                                  focus on
-                                                                  performance and accessibility.
-                                                            </p>
-                                                      </div>
-                                                </div>
-                                          </div>
-                                    </div>
-                              </div>
-                        </div>
-
-                        <!-- Carousel Controls -->
-                        <button class="carousel-control-prev" type="button" data-bs-target="#experienceCarousel"
-                              data-bs-slide="prev">
-                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                              <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#experienceCarousel"
-                              data-bs-slide="next">
-                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                              <span class="visually-hidden">Next</span>
-                        </button>
-                  </div>
-            </div>
-      </section>
-
-      <!-- Portofolio -->
-      <section id="portofolio" class="portofolio">
-            <center>
-                  <div class="container" data-aos="zoom-in" data-aos-offset="100" data-aos-delay="20"
-                        data-aos-duration="1000">
-                        <h2 class="text text-center">Portofolio</h2>
-                        <div class="row row-cols-lg-4 row-cols-md-2 row-cols-sm-3 row-cols-1">
-                              <a href="go-healthy.html">
-                                    <div class="card">
-                                          <img src="img/portofolio/gohealthy/poster_uas.jpeg" alt="Poster">
-                                          <div class="layer"></div>
-                                          <div class="info">
-                                                <h3 class="text-center">GoHealthy Web</h3>
-                                                <p class="text-center">UI/UX Designer, Frontend Dev</p>
-                                          </div>
-                                    </div>
-                              </a>
-
-                              <a href="sistem-pendaftaran-magang.html" class="baris-dua">
-                                    <div class="card">
-                                          <img src="img/portofolio/spm/spm.png" alt="Poster">
-                                          <div class="layer"></div>
-                                          <div class="info">
-                                                <h3 class="text-center">Sistem Pendaftaran Magang</h3>
-                                                <p class="text-center">UI/UX Designer, Frontend Dev</p>
-                                          </div>
-                                    </div>
-                              </a>
-
-                              <a href="perpustakaan.html" class="baris-dua">
-                                    <div class="card">
-                                          <img src="img/portofolio/gohealthy/poster_uas.jpeg" alt="Poster">
-                                          <div class="layer"></div>
-                                          <div class="info">
-                                                <h3 class="text-center">Perpustakaan Digital berbasis Website</h3>
-                                                <p class="text-center">UI/UX Designer, Frontend Dev</p>
-                                          </div>
-                                    </div>
-                              </a>
-
-
-                        </div>
-                  </div>
-            </center>
-      </section>
-
-      <!-- Why me and Contact -->
-      <section id="contact" class="contact">
+      <!-- HOME -->
+      <section class="home d-flex align-items-center" id="home">
             <div class="container">
                   <div class="row">
-                        <div class="col-lg-6 col-md-6 col-sm-6 col-6 mb-3 mb-sm-0">
-                              <div class="card card-left">
-                                    <div class="card-body">
-                                          <h5 class="card-title">Why Choose Me?</h5>
-                                          <ul>
-                                                <li>Passionate about designing stunning and memorable user experiences.
-                                                </li>
-                                                <li>Able to quickly adapt to the latest technology and industry trends.
-                                                </li>
-                                                <li>Reliable collaborator with superior communication skills.</li>
-                                                <li>Dedicated to delivering high quality software solutions.</li>
-                                          </ul>
-                                    </div>
+                        <div class="col-md-6 d-flex flex-column justify-content-center">
+                              <div class="home-content">
+                                    <h1>Hi, <span>Selamat Datang</span></h1>
+                                    <h3 class="text-animation">Saya seorang
+                                          <span class="typing-container" id="typing-text"></span>
+                                    </h3>
+                                    <p>Menciptkan Website yang Inovatif, Fungsional, dan User Friendly untuk Solusi
+                                          Teknologi Digital.</p>
+                              </div>
+                              <div class="social-icon">
+                                    <a href="https://www.instagram.com/fathurrobbany_?igsh=czZ6amt0NTFpbTln"><i
+                                                class="bi bi-instagram"></i></a>
+                                    <a href="https://www.tiktok.com/@pegasusss19?_t=8qeJreXzIG2&_r=1"><i
+                                                class="bi bi-tiktok"></i></a>
+                                    <a href="https://www.linkedin.com/in/fathurrobbany-pw-01b334312/"><i
+                                                class="bi bi-linkedin"></i></a>
+                                    <a href="https://github.com/fathur1902"><i class="bi bi-github"></i></a>
+                              </div>
+                              <div class="btn-group">
+                                    <a href="#contact" class="btn btn-primary">Kontak <i class="bi bi-envelope"></i></a>
+                                    <a href="#portofolio" class="btn btn-primary">Projek
+                                          <i class="bi bi-box-arrow-up-right"></i></a>
                               </div>
                         </div>
-                        <div class="col-lg-6 col-md-6 col-sm-6 col-6">
-                              <div class="card card-right">
-                                    <div class="card-body">
-                                          <h5 class="card-title">Contact Me</h5>
-                                          <p class="card-text">If you have any questions regarding the project or
-                                                collaboration, please feel free to contact me through the contact
-                                                information provided below. <b>Email: nadiagaesyaa@gmail.com</b></p>
-                                    </div>
+                        <div class="col-md-6 d-flex justify-content-center">
+                              <div class="home-img">
+                                    <img src="img/logo.gif" alt="Profile Image">
                               </div>
                         </div>
                   </div>
             </div>
       </section>
 
+      <!-- ABOUT -->
+      <section class="about d-flex align-items-center" id="about">
+            <div class="container">
+                  <div class="row">
+                        <h1 class="text-tentang">Tentang Saya</h1>
+                        <div class="col-md-6 d-flex flex-column justify-content-center">
+                              <div class="about-content">
+                                    <h1>Hello, <span>I'm</span></h1>
+                                    <h3 class="text-animation">Nadia Gaesya</h3>
+                                    <p>Saya lulusan S1 Teknik Informatika Universitas Riau dengan kemampuan kreativitas
+                                          dan pemikiran logis, berpengalaman dalam pengembangan web dan desain UI/UX
+                                          menggunakan Laravel, Figma, Canva, dan Adobe Photoshop. Saya fokus pada
+                                          pembuatan aplikasi yang efektif, mudah digunakan, dan menarik, serta memiliki
+                                          kemampuan untuk mempelajari hal baru dengan cepat.</p>
+                              </div>
+                              <div class="btn-group">
+                                    <a href="#contact" class="btn btn-primary">Unduh CV <i
+                                                class="bi bi-file-text"></i></a>
+                                    <a href="#portofolio" class="btn btn-primary">Lihat Projek <i
+                                                class="bi bi-box-arrow-up-right"></i></a>
+                              </div>
+                        </div>
+                        <div class="col-md-6 d-flex justify-content-center">
+                              <div class="about-img">
+                                    <img src="img/Pas-Foto.jpg" alt="Profile Image">
+                              </div>
+                        </div>
+                  </div>
+
+                  <!-- Grid -->
+                  <div class="grid">
+                        <div class="card">
+                              <a href="#portofolio">
+                                    <div class="icon">
+                                          <span class="icon-1"><i class="bi bi-code"></i></span>
+                                          <span class="count">11</span>
+                                    </div>
+                                    <div class="content">
+                                          <h3>TOTAL PROJEK</h3>
+                                    </div>
+                                    <div class="footer">
+                                          <p>Solusi web inovatif dibuat</p>
+                                          <a href="#">&#8599;</a>
+                                    </div>
+                              </a>
+                        </div>
+
+                        <div class="card">
+                              <a href="#portofolio">
+                                    <div class="icon">
+                                          <span class="icon-1"><i class="bi bi-award"></i></span>
+                                          <span class="count">3</span>
+                                    </div>
+                                    <div class="content">
+                                          <h3>SERTIFIKAT</h3>
+                                    </div>
+                                    <div class="footer">
+                                          <p>Keterampilan profesional divalidasi</p>
+                                          <a href="#">&#8599;</a>
+                                    </div>
+                              </a>
+                        </div>
+
+                        <div class="card">
+                              <a href="#portofolio">
+                                    <div class="icon">
+                                          <span class="icon-1"><i class="bi bi-hourglass-split"></i></span>
+                                          <span class="count">10</span>
+                                    </div>
+                                    <div class="content">
+                                          <h3>PENGALAMAN</h3>
+                                    </div>
+                                    <div class="footer">
+                                          <p>Perjalanan belajar yang berkelanjutan</p>
+                                          <a href="#">&#8599;</a>
+                                    </div>
+                              </a>
+                        </div>
+                  </div>
+            </div>
+      </section>
+
+      <!-- PORTOFOLIO -->
+      <section class="portofolio d-flex align-items-center" id="portofolio">
+            <div class="container">
+                  <h1 class="text-portofolio">Portofolio</h1>
+                  <div class="card" id="projek">
+                        <div class="card-header d-flex justify-content-around">
+                              <div class="inner-card" onclick="loadContent('project')">Projek <i
+                                          class="bi bi-box-arrow-up-right"></i></div>
+                              <div class="inner-card" onclick="loadContent('certificate')">Sertifikat <i
+                                          class="bi bi-award"></i></div>
+                              <div class="inner-card" onclick="loadContent('skills')">Kemampuan <i
+                                          class="bi bi-bookmark-star-fill"></i></div>
+                        </div>
+                        <div class="card-body" id="card-body">
+                              <div class="item">
+                                    <img src="img/portofolio/gohealthy/Beranda.png" alt="Beranda GoHealthy">
+                                    <div class="content">
+                                          <h3>Frontend Website Go Healthy</h3>
+                                          <p>Go-Healthy adalah aplikasi digital yang mempermudah pengelolaan kesehatan,
+                                                seperti memantau aktivitas fisik, mencatat nutrisi...</p>
+                                    </div>
+                                    <div class="footer">
+                                          <a href="https://renowidi.github.io/UAS-DPW-NIH/">
+                                                <p>Demo <i class="bi bi-box-arrow-up-right"></i></p>
+                                          </a>
+                                          <a href="gohealthy.html" class="footer-detail">Detail <i
+                                                      class="bi bi-arrow-right"></i></a>
+                                    </div>
+                              </div>
+
+                              <div class="item">
+                                    <img src="img/Pas-Foto.jpg" alt="Go-Healthy">
+                                    <div class="content">
+                                          <h3>Frontend Website Go Healthy</h3>
+                                          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                                Accusantium, quasi maiores eaque reiciendis est laboriosam.</p>
+                                    </div>
+                                    <div class="footer">
+                                          <a href="#">
+                                                <p>Demo <i class="bi bi-box-arrow-up-right"></i></p>
+                                          </a>
+                                          <a href="#" class="footer-detail">Detail <i class="bi bi-arrow-right"></i></a>
+                                    </div>
+                              </div>
+
+                              <div class="item">
+                                    <img src="img/Pas-Foto.jpg" alt="Go-Healthy">
+                                    <div class="content">
+                                          <h3>Frontend Website Go Healthy</h3>
+                                          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                                Accusantium, quasi maiores eaque reiciendis est laboriosam.</p>
+                                    </div>
+                                    <div class="footer">
+                                          <a href="#">
+                                                <p>Demo <i class="bi bi-box-arrow-up-right"></i></p>
+                                          </a>
+                                          <a href="#" class="footer-detail">Detail <i class="bi bi-arrow-right"></i></a>
+                                    </div>
+                              </div>
+
+                              <div class="item">
+                                    <img src="img/Pas-Foto.jpg" alt="Go-Healthy">
+                                    <div class="content">
+                                          <h3>Frontend Website Go Healthy</h3>
+                                          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                                Accusantium, quasi maiores eaque reiciendis est laboriosam.</p>
+                                    </div>
+                                    <div class="footer">
+                                          <a href="#">
+                                                <p>Demo <i class="bi bi-box-arrow-up-right"></i></p>
+                                          </a>
+                                          <a href="#" class="footer-detail">Detail <i class="bi bi-arrow-right"></i></a>
+                                    </div>
+                              </div>
+                        </div>
+
+                        <div class="card-footer">Footer</div>
+                  </div>
+            </div>
+      </section>
 
       <!-- Footer -->
       <footer>
@@ -390,48 +265,195 @@
             </div>
       </footer>
 
-      <!-- JS AOS -->
-      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+      <!-- JS -->
       <script>
-            AOS.init();
+            function loadContent(type) {
+                  const cardBody = document.getElementById('card-body');
+                  let content = '';
+                  if (type === 'project') {
+                        content = `
+                              <div class="item">
+                                    <img src="img/portofolio/gohealthy/Beranda.png" alt="Beranda GoHealthy">
+                                    <div class="content">
+                                          <h3>Frontend Website Go Healthy</h3>
+                                          <p>Go-Healthy adalah aplikasi digital yang mempermudah pengelolaan kesehatan,
+                                                seperti memantau aktivitas fisik, mencatat nutrisi...</p>
+                                    </div>
+                                    <div class="footer">
+                                          <a href="https://renowidi.github.io/UAS-DPW-NIH/">
+                                                <p>Demo <i class="bi bi-box-arrow-up-right"></i></p>
+                                          </a>
+                                          <a href="gohealthy.html" class="footer-detail">Detail <i
+                                                      class="bi bi-arrow-right"></i></a>
+                                    </div>
+                              </div>
+
+                              <div class="item">
+                                    <img src="img/Pas-Foto.jpg" alt="Go-Healthy">
+                                    <div class="content">
+                                          <h3>Frontend Website Go Healthy</h3>
+                                          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                                Accusantium, quasi maiores eaque reiciendis est laboriosam.</p>
+                                    </div>
+                                    <div class="footer">
+                                          <a href="#">
+                                                <p>Demo <i class="bi bi-box-arrow-up-right"></i></p>
+                                          </a>
+                                          <a href="#" class="footer-detail">Detail <i class="bi bi-arrow-right"></i></a>
+                                    </div>
+                              </div>
+
+                              <div class="item">
+                                    <img src="img/Pas-Foto.jpg" alt="Go-Healthy">
+                                    <div class="content">
+                                          <h3>Frontend Website Go Healthy</h3>
+                                          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                                Accusantium, quasi maiores eaque reiciendis est laboriosam.</p>
+                                    </div>
+                                    <div class="footer">
+                                          <a href="#">
+                                                <p>Demo <i class="bi bi-box-arrow-up-right"></i></p>
+                                          </a>
+                                          <a href="#" class="footer-detail">Detail <i class="bi bi-arrow-right"></i></a>
+                                    </div>
+                              </div>
+
+                              <div class="item">
+                                    <img src="img/Pas-Foto.jpg" alt="Go-Healthy">
+                                    <div class="content">
+                                          <h3>Frontend Website Go Healthy</h3>
+                                          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                                Accusantium, quasi maiores eaque reiciendis est laboriosam.</p>
+                                    </div>
+                                    <div class="footer">
+                                          <a href="#">
+                                                <p>Demo <i class="bi bi-box-arrow-up-right"></i></p>
+                                          </a>
+                                          <a href="#" class="footer-detail">Detail <i class="bi bi-arrow-right"></i></a>
+                                    </div>
+                              </div>
+                `;
+                  } else if (type === 'certificate') {
+                        // Konten untuk sertifikat
+                        content = `
+                    <div class="item">
+                        <img src="img/Certificate1.jpg" alt="Certificate 1">
+                        <h3>Sertifikat 1</h3>
+                        <p>Deskripsi sertifikat 1.</p>
+                    </div>
+                    <div class="item">
+                        <img src="img/Certificate2.jpg" alt="Certificate 2">
+                        <h3>Sertifikat 2</h3>
+                        <p>Deskripsi sertifikat 2.</p>
+                    </div>
+                    <div class="item">
+                        <img src="img/Certificate1.jpg" alt="Certificate 1">
+                        <h3>Sertifikat 1</h3>
+                        <p>Deskripsi sertifikat 1.</p>
+                    </div>
+                    <div class="item">
+                        <img src="img/Certificate2.jpg" alt="Certificate 2">
+                        <h3>Sertifikat 2</h3>
+                        <p>Deskripsi sertifikat 2.</p>
+                    </div>
+                    <div class="item">
+                        <img src="img/Certificate1.jpg" alt="Certificate 1">
+                        <h3>Sertifikat 1</h3>
+                        <p>Deskripsi sertifikat 1.</p>
+                    </div>
+                    <div class="item">
+                        <img src="img/Certificate2.jpg" alt="Certificate 2">
+                        <h3>Sertifikat 2</h3>
+                        <p>Deskripsi sertifikat 2.</p>
+                    </div>
+                `;
+                  } else if (type === 'skills') {
+                        // Konten untuk kemampuan
+                        content = `
+                    <div class="item">
+                        <img src="img/Skill1.jpg" alt="Skill 1">
+                        <h3>Kemampuan 1</h3>
+                        <p>Deskripsi kemampuan 1.</p>
+                    </div>
+                    <div class="item">
+                        <img src="img/Skill2.jpg" alt="Skill 2">
+                        <h3>Kemampuan 2</h3>
+                        <p>Deskripsi kemampuan 2.</p>
+                    </div>
+                    <div class="item">
+                        <img src="img/Skill1.jpg" alt="Skill 1">
+                        <h3>Kemampuan 1</h3>
+                        <p>Deskripsi kemampuan 1.</p>
+                    </div>
+                    <div class="item">
+                        <img src="img/Skill2.jpg" alt="Skill 2">
+                        <h3>Kemampuan 2</h3>
+                        <p>Deskripsi kemampuan 2.</p>
+                    </div>
+                    <div class="item">
+                        <img src="img/Skill1.jpg" alt="Skill 1">
+                        <h3>Kemampuan 1</h3>
+                        <p>Deskripsi kemampuan 1.</p>
+                    </div>
+                    <div class="item">
+                        <img src="img/Skill2.jpg" alt="Skill 2">
+                        <h3>Kemampuan 2</h3>
+                        <p>Deskripsi kemampuan 2.</p>
+                    </div>
+                `;
+                  }
+
+                  // Masukkan konten ke dalam card-body
+                  cardBody.innerHTML = content;
+            }
       </script>
 
-      <!-- JS GSAP -->
-      <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
 
-      <!-- CDN plugins -->
-      <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
-
-      <!-- Script Untuk gsap -->
+      <!-- Javascript Untuk Animasi Menghapus dan Menulis Text Otomatis -->
       <script>
-            // gsap tolong animasikan elemen class home tag img mulai dari posisi awalnya -100, mulai dari opacitynya 0 selama duration 1 detik ke posisi saat ini
-            // gsap.from('.home img', {duration:1, y:-100, opacity:0, ease: 'bounce'})
-            // gsap.from('.home img', { duration: 1, rotateY: 360, opacity: 0 })
+            // Membuat variabel awal
+            const textArray = ["UI/UX Designer", "Frontend Developer"]; //Membuat array teks yang akan ditampilkan dalam animasi
+            const typingContainer = document.getElementById("typing-text"); //Element typingContainer dengan Id typing-text akan digunakan untuk menampilkan teks animasi
 
-            // Kalau mau tambah plugin tinggal tambah menggunakan , misalnya (TextPlugin, dst)
-            gsap.registerPlugin(TextPlugin)
+            let textIndex = 0; //Mengontrol kalimat mana dari daftar yang sedang diketik
+            let charIndex = 0; //Mengontrol huruf mana dalam kalimat yang sedang muncul
+            let isDeleting = false; //Mengecek apakah teks sedang dihapus atau sedang ditulis
 
-            // Untuk animasi tulisan
-            gsap.to('.about h3', { duration: 10, delay: 0, text: 'Halo! I am Nadia Gaesya, a UI/UX Designer and Frontend Developer who is very enthusiastic about continuing to learn and develop, creating user-friendy website and attractive visual designs, with a focus on providing a meanigful experience for users.' })
+            // Fungsi typeText
+            function typeText() {
+                  const currentText = textArray[textIndex]; //Mengambil kalimat dari daftar sesuai dengan textIndes
 
-            gsap.to('.enthusiast #ux', { duration: 2, delay: 0.5, text: 'UI/UX Enthusiast' })
-            gsap.to('.enthusiast #text-ux', { duration: 13, delay: 0, text: 'I have a passion for UI/UX design, especially in creating aesthetic interfaces and providing a pleasant user experience. I enjoy the process of understanding user needs and translating them into functional and attractive designs. Every design project is an opportunity for me to come up with creative solutions that not only look beautiful but are also easy to use.' })
+                  // Logika untuk mengetik dan menghapus
+                  const displayedText = isDeleting
+                        ? currentText.substring(0, charIndex--) //Jika ingin menghapus maka kurangi satu huruf
+                        : currentText.substring(0, charIndex++);  //Jika ingin mengetik maka tambah satu huruf
 
-            gsap.to('.enthusiast #fe', { duration: 2, delay: 0.5, text: 'Frontend Enthusiast' })
-            gsap.to('.enthusiast #text-fe', { duration: 13, delay: 0, text: 'I have a great interest in frontend development,especially in creating responsive web designs. I enjoy the process of designing aesthetic and interactive interfaces, providing a comfortable and intuitive user experience. Every line of code I write is an expression of my creativity in building responsive and beautiful websites.' })
+                  // Menampilkan hasil ke layar 
+                  typingContainer.textContent = displayedText;
 
+                  // Jika sudah selesai mengetik kalimat
+                  if (!isDeleting && charIndex === currentText.length) {
+                        isDeleting = true; //Mulai proses menghapus
+                        setTimeout(typeText, 1500); // Tinggu 1,5 detik sebelum menghapus
 
-            gsap.from('.navbar', { duration: 1.5, y: '-100%', opacity: 0, ease: 'bounce' })
-            // gsap.from('.home img', {duration:1, y: '-100%', opacity:0, ease: 'bounce'})
-            // gsap.from('.left', { duration: 1.5, y: '-100%', opacity: 0, ease: 'bounce' })
+                        // Jika semua huruf sudah dihapus, ganti ke kalimat berikutnya.
+                  } else if (isDeleting && charIndex === 0) {
+                        isDeleting = false; //Berhenti menghapus kalimat
+                        textIndex = (textIndex + 1) % textArray.length; //Pindah ke kalimat selanjutnya
+                        setTimeout(typeText, 1000); // Tunggu 0,5 detik sebelum mulai mengetik lagi
+
+                        // Mengatur kecepatan huruf saat mengetik dan menghapus
+                  } else {
+                        setTimeout(typeText, isDeleting ? 50 : 100); // Cepat menghapus 50ms, lambat mengetik 100ms
+                  }
+            }
+
+            // Memanggil fungsi pertama kali untuk memulai efek animasi
+            typeText();
       </script>
-
-
-      <!-- JS Bootstrap -->
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-            crossorigin="anonymous"></script>
-
+      <!-- JS -->
+      <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

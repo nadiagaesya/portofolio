@@ -1,0 +1,391 @@
+::root {
+    --primary100:#1F3A5F;
+    --primary200:#4d648d;
+    --primary300:#acc2ef;
+    --accent100:#3D5A80;
+    --accent200:#cee8ff;
+    --text100:#FFFFFF;
+    --text200:#e0e0e0;
+    --bg100:#0F1C2E;
+    --bg200:#1f2b3e;
+    --bg300:#374357;  
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: row; /* Ubah ke horizontal */
+    flex-wrap: wrap; /* Membuat elemen bisa berpindah ke baris berikutnya jika dibutuhkan */
+    justify-content: center;
+    align-items: center;
+    color: var(--accent-100);
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    background: linear-gradient(45deg, #acc2ef, #3D5A80, #e0e0e0);
+    background-size: 300%, 300%;
+    animation: gradientMove 5s infinite ease-in-out;
+    background-attachment: fixed; /* Efek latar belakang tetap */
+}
+
+@keyframes gradientMove {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+/* NAVBAR */
+.navbar {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+}
+
+.navbar .navbar-brand {
+    background: transparent;
+    color: #FFFFFF;
+    border: 2px solid #1F3A5F;
+    border-radius: 1rem;
+    box-shadow: 0 0 25px rgba(173, 194, 239, 0.5);
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 0.6rem 2rem;
+    margin: 1rem 0.1rem;
+    position: relative;
+    overflow: hidden;
+    height: 3rem;
+    background-size: 400%;
+}
+
+.navbar .navbar-brand::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    width: 100%;
+    height: inherit;
+    border-radius: inherit;
+    background: linear-gradient(83deg, #0F1C2E, #3D5A80, #1F3A5F);
+    transition: all 0.5s;
+    mix-blend-mode: screen; /* Menjadikan pseudo-elemen transparan */
+}
+
+.navbar .navbar-brand:hover::before {
+      transform: scaleX(1);
+}
+
+.navbar .navbar-brand span {
+    font-size: 1rem;
+    color: #FFFFFF;
+    font-weight: 400;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.navbar .navbar-brand span i {
+      margin-right: 0.5rem;
+      transition: transform 0.3s ease; /* Tambahkan animasi transform */
+}
+
+/* ABOUT */
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15rem;
+}
+
+.about .row .about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    text-align: left;
+    justify-content: center;
+    margin-top: -2rem;
+    color: #FFFFFF ;
+}
+
+.about .row .about-content h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-top: 3rem;
+    line-height: 1;
+    background-image:
+    -webkit-linear-gradient(125deg, #0F1C2E, #3D5A80, #1F3A5F);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: hue 10s infinite linear;
+}
+
+
+.about .row .about-content h3 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.about .row .about-content p {
+    font-size: 0.9rem;
+    font-weight: 300;
+    line-height: 1.4;
+    max-width: 1000px;
+}
+
+.about .row .about-img {
+    border-radius: 1rem;
+}
+
+.about .row .about-img img {
+    position: relative;
+    top: 2rem;
+    width: 40vw;
+    height: 20vw;
+    border-radius: 1rem;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+    box-shadow: 0 0 30px #cee8ff;
+}
+
+.about .row .about-img img:hover {
+    box-shadow: 0 0 25px #1F3A5F,
+        0 0 50px #1F3A5F,
+        0 0 100px #1F3A5F;
+}
+
+.about .row .btn-group .btn {
+    display: inline-block;
+    padding:  0.5rem 0.5rem;
+    background: linear-gradient(125deg, #0F1C2E, #3D5A80, #1F3A5F);
+    border-radius: 4rem;
+    font-size: 1.1rem;
+    color: #FFFFFF;
+    border: 2px solid transparent;
+    letter-spacing: 0.1rem;
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.about .row .btn-group .btn:hover {
+    box-shadow: 0 0 50px #cee8ff;
+    color: #FFFFFF;
+}
+
+.about .row .btn-group {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 1rem 0;
+}
+
+/* INI UNTUK tombol btn di dalam class btn-group */
+/* a:nth-of-type(2) = menargetkan elemen tag a urutan ke 2 yang ada dalam btn-group */
+.about .row .btn-group a:nth-of-type(2) {
+    background: transparent;
+    color: #FFFFFF;
+    border: 2px solid #1F3A5F;
+    box-shadow: 0 0 25px rgba(173, 194, 239, 0.5);
+
+    position: relative;
+    overflow: hidden;
+    height: 3rem;
+    background-size: 400%;
+}
+
+.about .row .btn-group a:nth-of-type(2)::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    width: 100%;
+    height: inherit;
+    border-radius: inherit;
+    background: linear-gradient(83deg, #0F1C2E, #3D5A80, #1F3A5F);
+    transition: all 0.5s;
+    mix-blend-mode: screen; /* Menjadikan pseudo-elemen transparan */
+}
+
+.about .row .btn-group a:nth-of-type(2):hover::before {
+    transform: scaleX(1);
+}
+
+.about h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: left;
+    margin-top: 1.5rem;
+    line-height: 1.5;
+    background-image:
+    -webkit-linear-gradient(125deg, #0F1C2E, #3D5A80, #1F3A5F);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: hue 10s infinite linear;
+}
+
+@keyframes hue {
+    from {
+        filter: hue-rotate(0deg);
+    }
+    to {
+        filter: hue-rotate(-180deg);
+    }
+}
+
+
+.about h2 i {
+    margin-right: 0.5rem;
+    line-height: 1.5;
+}
+
+.about .grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
+    background: transparent;
+    gap: 10px;
+    margin-top: 1rem;
+}
+
+.about .grid .card {
+    background: transparent;
+    width: 100%;
+    border: none;
+    border-radius: none;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column; /* Elemen dalam kartu diatur secara vertikal */
+    justify-content: space-between;
+    position: relative;  /* Membuat posisi relatif untuk referensi posisi absolut */
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animasi */
+}
+
+.about .grid .card a {
+    text-decoration: none;
+}
+
+.about .grid .icon {
+    display: inline-flex; /* Ikon tetap dalam satu baris */
+    justify-content: flex-start; /* Rata kiri */
+    align-items: center; /* Sejajar secara vertikal */
+    position: absolute; /* Posisi absolut agar berada di bagian atas kartu */
+    top: 1rem; /* Jarak dari atas kartu */
+    left: 1rem; /* Jarak dari kiri kartu */
+}
+
+.about .grid .icon a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    background: transparent;
+    border: 2px solid #0F1C2E;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    color: #0F1C2E;
+    margin: 1rem 2rem 0 0;
+    transition: 0.3s ease-in-out;
+}
+
+.about .grid .icon a:hover {
+    color: #0F1C2E;
+    transform: scale(1.1)translateY(-5px);
+    box-shadow: 0 0 25px #acc2ef;
+}
+
+.about .grid #card {
+    background: linear-gradient(125deg, #0F1C2E, #3D5A80, #1F3A5F);
+    width: 100%;
+    border: none;
+    border-radius: none;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column; /* Elemen dalam kartu diatur secara vertikal */
+    justify-content: space-between;
+    position: relative;  /* Membuat posisi relatif untuk referensi posisi absolut */
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animasi */
+}
+
+.about .grid #card .content h3 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: left;
+    margin-top: 1.5rem;
+    line-height: 1.5;
+    color: #FFFFFF;
+}
+
+.about .grid .card .content {
+    margin-top: -2rem;
+    margin-bottom: 0;
+}
+
+.about .grid .card .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about .grid .card .footer li {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.6);
+    margin: 0.5rem 0 0;
+    text-align: left;
+    flex: 1;
+}
+
+.about .grid .card .footer ul {
+    list-style: none; /* Menghilangkan bullet default */
+}
+
+.about .grid .card .footer ul li::before {
+    content: '\2022'; /* Bullet symbol */
+    color: #cee8ff;
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+
+/* FOOTER */
+footer {
+      position: relative;
+      width: 100%;
+      height: auto;
+      bottom: 0%;
+      left: 0%;
+      margin-top: 2rem;
+      padding: 2rem;
+      background-color: var(--blue);
+      color: white;
+      font-size: 1rem;
+}
+
+footer a {
+      color: var(--bg);
+      font-weight: bold;
+      text-decoration: none;
+}
+
+footer a:hover {
+      color: black;
+}
+
+footer li {
+      list-style: none;
+      display: inline;
+      margin: 0.5rem;
+}

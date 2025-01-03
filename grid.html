@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Beranda</title>
+
+      <!-- CSS -->
+      <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+      <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+
+      <!-- Fonts Google -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&family=Rochester&display=swap"
+            rel="stylesheet">
+
+</head>
+
+<style>
+      .portofolio {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+      }
+
+      .portofolio .text-portofolio {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 5rem;
+            background-image:
+                  -webkit-linear-gradient(125deg, #0F1C2E, #3D5A80, #1F3A5F);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: hue 10s infinite linear;
+      }
+
+      @keyframes hue {
+            from {
+                  filter: hue-rotate(0deg);
+            }
+
+            to {
+                  filter: hue-rotate(-180deg);
+            }
+      }
+
+      .portofolio .card {
+            border: none;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 20px;
+            width: 200vh;
+            /* Lebar card utama */
+            max-width: 1200px;
+            /* Maksimal lebar card utama */
+            margin: auto;
+            /* Agar card utama berada di tengah */
+
+            background-color: transparent;
+            /* Transparan agar menyatu */
+            box-shadow: none;
+            /* Hapus shadow */
+      }
+
+      .portofolio .card .card-header {
+            background: linear-gradient(83deg, #0F1C2E, #3D5A80, #1F3A5F);
+            border-radius: 1rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            padding: 16px;
+            font-size: 1rem;
+            display: flex;
+            gap: 10px;
+            /* Jarak antar kartu */
+            justify-content: space-between;
+            /* Sejajar secara horizontal */
+            align-items: center;
+            margin-bottom: 2rem;
+      }
+
+      .portofolio .card .card-header .inner-card {
+            background: #4d648d;
+            border: none;
+            border-radius: 1rem;
+            padding: 15px 30px;
+            color: white;
+            font-size: 1.1rem;
+            flex: 1;
+            /* Agar memiliki ukuran fleksibel */
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+      }
+
+      .portofolio .card .card-header .inner-card:hover {
+            background: #5E81AC;
+      }
+
+      .portofolio .card .card-header .inner-card i {
+            margin-left: 4px;
+      }
+
+      .portofolio .card-body {
+            padding: 16px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+      }
+
+      .portofolio .card-body .item {
+            background: linear-gradient(83deg, #0F1C2E, #3D5A80, #1F3A5F);
+            border-radius: 1rem;
+            border: none;
+            overflow: hidden;
+            padding: 15px 30px;
+            font-size: 1.1rem;
+            text-align: center;
+            color: white;
+      }
+
+      .portofolio .card-body .item img {
+            width: 100%;
+            height: 150px;
+            /* Fixed height for images */
+            object-fit: cover;
+            /* Crop images proportionally */
+            border-radius: 1rem;
+      }
+
+      .portofolio .card-body .item .content {
+            padding: 10px;
+      }
+
+      .portofolio .card-body .item a {
+            text-decoration: none;
+      }
+
+      .portofolio .card-body .item h3 {
+            margin: 10px 0;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            margin: 0;
+            color: rgba(255, 255, 255, 0.8);
+            text-align: left;
+      }
+
+      .portofolio .card-body .item p {
+            font-size: 0.8rem;
+            color: rgba(255, 255, 255, 0.6);
+            margin: 0.5rem 0 0;
+            text-align: left;
+            flex: 1;
+      }
+
+
+      .portofolio .card-body .item .footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+      }
+
+      .portofolio .card-body .item .footer p {
+            font-size: 0.9rem;
+            font-weight: bold;
+            color: #5e9cf0;
+            margin: 0.5rem 0 0;
+            text-align: left;
+            flex: 1;
+      }
+
+      .portofolio .card-body .item .footer .footer-detail {
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.8);
+            margin: 0.5rem 0 0;
+            background: #4d648d;
+            border-radius: 0.5rem;
+            padding: 5px 1rem;
+            text-decoration: none;
+            flex-shrink: 0;
+      }
+
+      .portofolio .card-body .item .footer-detail i {
+            margin-left: 4px;
+      }
+</style>
+
+<body>
+
+      <!-- PORTOFOLIO -->
+      <section class="portofolio" id="portofolio">
+            <h1>Portofolio</h1>
+            <div class="card">
+                  <div class="card-header d-flex justify-content-around">
+                        <div class="inner-card" onclick="loadContent('project')">Projek</div>
+                        <div class="inner-card" onclick="loadContent('certificate')">Sertifikat</div>
+                        <div class="inner-card" onclick="loadContent('skills')">Kemampuan</div>
+                  </div>
+                  <div class="card-body" id="card-body">
+                        <!-- Isi awal card-body -->
+                        <div class="item">
+                              <img src="img/Pas-Foto.jpg" alt="Go Healthy">
+                              <h3>Frontend Website Go Healthy</h3>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, quasi maiores
+                                    eaque reiciendis.</p>
+                        </div>
+                        <div class="item">
+                              <img src="img/Pas-Foto.jpg" alt="Go Healthy">
+                              <h3>Frontend Website Go Healthy</h3>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, quasi maiores
+                                    eaque reiciendis.</p>
+                        </div>
+                        <div class="item">
+                              <img src="img/Pas-Foto.jpg" alt="Go Healthy">
+                              <h3>Frontend Website Go Healthy</h3>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, quasi maiores
+                                    eaque reiciendis.</p>
+                        </div>
+                        <div class="item">
+                              <img src="img/Pas-Foto.jpg" alt="Go Healthy">
+                              <h3>Frontend Website Go Healthy</h3>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, quasi maiores
+                                    eaque reiciendis.</p>
+                        </div>
+                  </div>
+            </div>
+      </section>
+
+      <!-- JS -->
+      <script>
+            // Simpan konten awal card-body dalam variabel
+            const initialContent = `
+            <!-- Isi awal card-body -->
+                        <div class="item">
+                              <img src="img/Pas-Foto.jpg" alt="Go Healthy">
+                              <h3>Frontend Website Go Healthy</h3>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, quasi maiores
+                                    eaque reiciendis.</p>
+                        </div>
+                        <div class="item">
+                              <img src="img/Pas-Foto.jpg" alt="Go Healthy">
+                              <h3>Frontend Website Go Healthy</h3>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, quasi maiores
+                                    eaque reiciendis.</p>
+                        </div>
+                        <div class="item">
+                              <img src="img/Pas-Foto.jpg" alt="Go Healthy">
+                              <h3>Frontend Website Go Healthy</h3>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, quasi maiores
+                                    eaque reiciendis.</p>
+                        </div>
+                        <div class="item">
+                              <img src="img/Pas-Foto.jpg" alt="Go Healthy">
+                              <h3>Frontend Website Go Healthy</h3>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, quasi maiores
+                                    eaque reiciendis.</p>
+                        </div>
+        `;
+
+            function loadContent(type) {
+                  const cardBody = document.getElementById('card-body');
+                  let content = '';
+                  if (type === 'project') {
+                        // Tampilkan konten awal
+                        content = initialContent;
+                  } else if (type === 'certificate') {
+                        // Konten untuk sertifikat
+                        content = `
+                    <div class="item">
+                        <img src="img/Certificate1.jpg" alt="Certificate 1">
+                        <h3>Sertifikat 1</h3>
+                        <p>Deskripsi sertifikat 1.</p>
+                    </div>
+                    <div class="item">
+                        <img src="img/Certificate2.jpg" alt="Certificate 2">
+                        <h3>Sertifikat 2</h3>
+                        <p>Deskripsi sertifikat 2.</p>
+                    </div>
+                    <div class="item">
+                        <img src="img/Certificate1.jpg" alt="Certificate 1">
+                        <h3>Sertifikat 1</h3>
+                        <p>Deskripsi sertifikat 1.</p>
+                    </div>
+                    <div class="item">
+                        <img src="img/Certificate2.jpg" alt="Certificate 2">
+                        <h3>Sertifikat 2</h3>
+                        <p>Deskripsi sertifikat 2.</p>
+                    </div>
+                    <div class="item">
+                        <img src="img/Certificate1.jpg" alt="Certificate 1">
+                        <h3>Sertifikat 1</h3>
+                        <p>Deskripsi sertifikat 1.</p>
+                    </div>
+                    <div class="item">
+                        <img src="img/Certificate2.jpg" alt="Certificate 2">
+                        <h3>Sertifikat 2</h3>
+                        <p>Deskripsi sertifikat 2.</p>
+                    </div>
+                `;
+                  } else if (type === 'skills') {
+                        // Konten untuk kemampuan
+                        content = `
+                    <div class="item">
+                        <img src="img/Skill1.jpg" alt="Skill 1">
+                        <h3>Kemampuan 1</h3>
+                        <p>Deskripsi kemampuan 1.</p>
+                    </div>
+                    <div class="item">
+                        <img src="img/Skill2.jpg" alt="Skill 2">
+                        <h3>Kemampuan 2</h3>
+                        <p>Deskripsi kemampuan 2.</p>
+                    </div>
+                    <div class="item">
+                        <img src="img/Skill1.jpg" alt="Skill 1">
+                        <h3>Kemampuan 1</h3>
+                        <p>Deskripsi kemampuan 1.</p>
+                    </div>
+                    <div class="item">
+                        <img src="img/Skill2.jpg" alt="Skill 2">
+                        <h3>Kemampuan 2</h3>
+                        <p>Deskripsi kemampuan 2.</p>
+                    </div>
+                    <div class="item">
+                        <img src="img/Skill1.jpg" alt="Skill 1">
+                        <h3>Kemampuan 1</h3>
+                        <p>Deskripsi kemampuan 1.</p>
+                    </div>
+                    <div class="item">
+                        <img src="img/Skill2.jpg" alt="Skill 2">
+                        <h3>Kemampuan 2</h3>
+                        <p>Deskripsi kemampuan 2.</p>
+                    </div>
+                `;
+                  }
+
+                  // Masukkan konten ke dalam card-body
+                  cardBody.innerHTML = content;
+            }
+      </script>
+      <!-- JS -->
+      <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,680 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+} */
+
+::root {
+    --primary100:#1F3A5F;
+    --primary200:#4d648d;
+    --primary300:#acc2ef;
+    --accent100:#3D5A80;
+    --accent200:#cee8ff;
+    --text100:#FFFFFF;
+    --text200:#e0e0e0;
+    --bg100:#0F1C2E;
+    --bg200:#1f2b3e;
+    --bg300:#374357;  
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: row; /* Ubah ke horizontal */
+    flex-wrap: wrap; /* Membuat elemen bisa berpindah ke baris berikutnya jika dibutuhkan */
+    justify-content: center;
+    align-items: center;
+    color: var(--accent-100);
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    background: linear-gradient(45deg, #acc2ef, #3D5A80, #e0e0e0);
+    background-size: 300%, 300%;
+    animation: gradientMove 5s infinite ease-in-out;
+    background-attachment: fixed; /* Efek latar belakang tetap */
+}
+
+@keyframes gradientMove {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+/* NAVBAR */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+}
+
+
+.navbar .navbar-brand span {
+    font-size: 1rem;
+    color: #FFFFFF;
+    font-weight: 400;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.navbar #logo span {
+    text-shadow: 0 10px 25px #cee8ff;
+}
+
+.navbar .navbar-brand:hover {
+    transform: scale(1.1);
+    color: #cee8ff;
+    border-bottom: 3px solid #cee8ff;
+}
+
+.navbar #navbarNav .navbar-nav a {
+    font-size: 1rem;
+    color: #FFFFFF;
+    margin-left: 1rem;
+    font-weight: 400;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+.navbar #navbarNav .navbar-nav a:hover,
+.navbar #navbarNav .navbar-nav a.active {
+    transform: scale(1.1);
+    color: #cee8ff;
+    border-bottom: 3px solid #cee8ff;
+}
+
+/* HOME */
+section {
+    min-height: 100vh;
+    padding: 10rem 9% 10rem;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15rem;
+}
+
+.home .row .home-content {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    text-align: left;
+    justify-content: center;
+    margin-top: 3rem;
+    color: #FFFFFF ;
+}
+
+.home .row .home-content h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    line-height: 1;
+}
+
+.home .row .home-content h3 {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+}
+
+.home .row .home-content p {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.8;
+    max-width: 1000px;
+}
+
+.home .row .home-img {
+    border-radius: 50%;
+}
+
+.home .row .home-img img {
+    position: relative;
+    top: 1rem;
+    width: 20vw;
+    height: 20vw;
+    border-radius: 10%;
+    margin-left: 150px;
+    cursor: pointer;
+    /* transition: 0.4s ease-in-out; */
+    /* box-shadow: 0 0 30px #cee8ff; */
+}
+
+.home .row .social-icon {
+    display: inline-flex;
+    justify-content: left;
+    align-items: left;
+}
+
+.home .row .social-icon a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    background: transparent;
+    border: 2px solid #cee8ff;
+    font-size: 1rem;
+    border-radius: 50%;
+    color: #cee8ff;
+    margin: 1rem 2rem 0 0;
+    transition: 0.3s ease-in-out;
+}
+
+.home .row .social-icon a:hover {
+    color: #cee8ff;
+    transform: scale(1.3)translateY(-5px);
+    box-shadow: 0 0 25px #cee8ff;
+}
+
+.home .row .btn-group .btn {
+    display: inline-block;
+    padding:  0.5rem 0.5rem;
+    background: #1F3A5F;
+    border-radius: 4rem;
+    font-size: 1.1rem;
+    color: #FFFFFF;
+    border: 2px solid transparent;
+    letter-spacing: 0.1rem;
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    /* width: 50px; */
+}
+
+.home .row .btn-group .btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 50px #1F3A5F;
+    background-color: #cee8ff;
+    color: #1F3A5F;
+}
+
+.home .row .btn-group {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+/* INI UNTUK tombol btn di dalam class btn-group */
+/* a:nth-of-type(2) = menargetkan elemen tag a urutan ke 2 yang ada dalam btn-group */
+/* .home .row .btn-group a:nth-of-type(2) {
+    background-color: black;
+    color: var(--accent200);
+    border: 2px solid var(--accent200);
+    box-shadow: 0 0 25px transparent;
+}
+
+.home .row .btn-group a:nth-of-type(2):hover {
+    box-shadow: 0 0 25px var(--accent200);
+    background-color: var(--accent200);
+    color: rgb(0, 0, 0);
+} */
+
+.home .row .home-content .text-animation .typing-container {
+    font-size: 1rem;
+    font-weight: bold;
+    white-space: nowrap; /* Mencegah teks terpotong atau membungkus ke baris berikutnya */
+    overflow: hidden; /* Menyembunyikan teks di luar batas elemen */
+    border-right: 3px solid #ecf0f1;
+    width: fit-content; /* Menentukan lebar elemen berdasarkan kontennya */
+    color: #1F3A5F;
+    animation: blink 0.7s step-end infinite; /* Menerapkan animasi blink dengan durasi 0.7 detik yang berulang tanpa henti */
+}
+
+/* Membuat animasi berkedip dengan mengganti warna garis menjadi transparan di tengah animasi */
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+/* ABOUT */
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15rem;
+}
+
+.about .row .text-tentang {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-top: -10rem;
+    background-image:
+    -webkit-linear-gradient(125deg, #0F1C2E, #3D5A80, #1F3A5F);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: hue 10s infinite linear;
+    /* text-shadow: 0px 5px 35px #acc2ef; */
+}
+
+@keyframes hue {
+    from {
+        filter: hue-rotate(0deg);
+    }
+    to {
+        filter: hue-rotate(-180deg);
+    }
+}
+
+.about .row .about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    text-align: left;
+    justify-content: center;
+    margin-top: 1rem;
+    color: #FFFFFF ;
+}
+
+.about .row .about-content h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-top: -3rem;
+    line-height: 1;
+    background-image:
+    -webkit-linear-gradient(125deg, #0F1C2E, #3D5A80, #1F3A5F);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: hue 10s infinite linear;
+}
+
+.about .row .about-content h3 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.about .row .about-content p {
+    font-size: 0.9rem;
+    font-weight: 300;
+    line-height: 1.4;
+    max-width: 1000px;
+}
+
+.about .row .about-img {
+    border-radius: 50%;
+}
+
+.about .row .about-img img {
+    position: relative;
+    top: -1rem;
+    width: 18vw;
+    height: 18vw;
+    border-radius: 50%;
+    margin-left: 150px;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+    box-shadow: 0 0 30px #cee8ff;
+}
+
+.about .row .about-img img:hover {
+    box-shadow: 0 0 25px #1F3A5F,
+        0 0 50px #1F3A5F,
+        0 0 100px #1F3A5F;
+}
+
+.about .row .btn-group .btn {
+    display: inline-block;
+    padding:  0.5rem 0.5rem;
+    background: linear-gradient(125deg, #0F1C2E, #3D5A80, #1F3A5F);
+    border-radius: 4rem;
+    font-size: 1.1rem;
+    color: #FFFFFF;
+    border: 2px solid transparent;
+    letter-spacing: 0.1rem;
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.about .row .btn-group .btn:hover {
+    box-shadow: 0 0 50px #cee8ff;
+    color: #FFFFFF;
+}
+
+.about .row .btn-group {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 1rem 0;
+}
+
+/* INI UNTUK tombol btn di dalam class btn-group */
+/* a:nth-of-type(2) = menargetkan elemen tag a urutan ke 2 yang ada dalam btn-group */
+.about .row .btn-group a:nth-of-type(2) {
+    background: transparent;
+    color: #FFFFFF;
+    border: 2px solid #1F3A5F;
+    box-shadow: 0 0 25px rgba(173, 194, 239, 0.5);
+
+    position: relative;
+    overflow: hidden;
+    height: 3rem;
+    background-size: 400%;
+}
+
+.about .row .btn-group a:nth-of-type(2)::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    width: 100%;
+    height: inherit;
+    border-radius: inherit;
+    background: linear-gradient(83deg, #0F1C2E, #3D5A80, #1F3A5F);
+    transition: all 0.5s;
+    mix-blend-mode: screen; /* Menjadikan pseudo-elemen transparan */
+}
+
+.about .row .btn-group a:nth-of-type(2):hover::before {
+    transform: scaleX(1);
+}
+
+.about .grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background: transparent;
+    padding: 10px;
+    gap: 10px;
+    margin-top: 1rem;
+}
+
+.about .grid > div {
+    background-color: #0F1C2E;
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 1rem;
+    text-align: center;
+    color: white;
+}
+
+.about .grid .card {
+    background: linear-gradient(145deg, #1E1E2F, #25273D);
+    width: 100%;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animasi */
+}
+
+.about .grid .card:hover {
+    transform: translateY(-10px); /* Mengangkat kartu ke atas */
+    box-shadow: 0 0 35px rgba(173, 194, 239, 0.5); /* Bayangan lebih besar saat hover */
+}
+
+.about .grid .card a {
+    text-decoration: none;
+}
+
+.about .grid .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 15rem; /* Tambahkan ruang antara kolom */
+}
+
+.about .grid .icon .icon-1,
+.about .grid .icon .count {
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 1.3rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.about .grid .card .content {
+    margin-top: 1.1rem;
+    margin-bottom: 0;
+}
+
+.about .grid .card .content h3 {
+    font-size: 1rem;
+    letter-spacing: 1px;
+    margin: 0;
+    margin-left: 1rem;
+    color: rgba(255, 255, 255, 0.8);
+    text-align: left;
+}
+
+.about .grid .card .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about .grid .card .footer p {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.6);
+    margin: 0.5rem 0 0;
+    text-align: left;
+    flex: 1;
+}
+
+.about .grid .card .footer a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    font-size: 1.25rem;
+    margin-left: 1rem;
+    flex-shrink: 0;
+}
+
+/* PORTOFOLIO */
+.portofolio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.portofolio .text-portofolio {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 5rem;
+    background-image:
+    -webkit-linear-gradient(125deg, #0F1C2E, #3D5A80, #1F3A5F);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: hue 10s infinite linear;
+}
+
+@keyframes hue {
+    from {
+        filter: hue-rotate(0deg);
+    }
+    to {
+        filter: hue-rotate(-180deg);
+    }
+}
+
+.portofolio .card {
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    width: 200vh; /* Lebar card utama */
+    max-width: 1200px; /* Maksimal lebar card utama */
+    margin: auto; /* Agar card utama berada di tengah */
+
+    background-color: transparent; /* Transparan agar menyatu */
+    box-shadow: none; /* Hapus shadow */
+    }
+
+.portofolio .card .card-header {
+    background: linear-gradient(83deg, #0F1C2E, #3D5A80, #1F3A5F);
+    border-radius: 1rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 16px;
+    font-size: 1rem;
+    display: flex;
+    gap: 10px; /* Jarak antar kartu */
+    justify-content: space-between; /* Sejajar secara horizontal */
+    align-items: center;
+    margin-bottom: 2rem;
+    }
+
+.portofolio .card .card-header .inner-card {
+    background: #4d648d;
+    border: none;
+    border-radius: 1rem;
+    padding: 15px 30px;
+    color: white;
+    font-size: 1.1rem;
+    flex: 1; /* Agar memiliki ukuran fleksibel */
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    }
+
+.portofolio .card .card-header .inner-card:hover {
+    background: #5E81AC;
+}
+
+.portofolio .card .card-header .inner-card i {
+      margin-left: 4px;
+}
+
+.portofolio .card-body {
+    padding: 16px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(250px, 1fr)); /* Responsive grid (3 kolom, memiliki lebar minimal 250px dan maksimal mengisi ruang yang tersedia secara proporsional (1 fraction unit). */
+    gap: 20px; /* Memberikan jarak antar elemen grid, baik secara horizontal maupun vertikal */
+    }
+
+.portofolio .card-body .item {
+    background: linear-gradient(83deg, #0F1C2E, #3D5A80, #1F3A5F);
+    border-radius: 1rem;
+    border: none;
+    overflow: hidden;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    text-align: center;
+    color: white;
+    min-height: 200px; /* Menambahkan tinggi minimum */
+    }
+
+.portofolio .card-body .item img {
+    width: 100%;
+    height: 180px; /* Fixed height for images */
+    object-fit: cover; /* Crop images proportionally */
+    border-radius: 1rem;
+    }
+
+.portofolio .card-body .item .content {
+      padding: 10px;
+    }
+
+.portofolio .card-body .item a {
+    text-decoration: none;
+}
+
+.portofolio .card-body .item h3 {
+    font-size: 1rem;
+    letter-spacing: 1px;
+    margin: auto;
+    margin-top: 0.9rem;
+    color: rgba(255, 255, 255, 0.8);
+    text-align: left;
+    }
+
+.portofolio .card-body .item p {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.6);
+    margin: 0.5rem 0 0;
+    text-align: left;
+    flex: 1;
+    }
+
+
+.portofolio .card-body .item .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.portofolio .card-body .item .footer p {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #5e9cf0;
+    margin: 0.5rem 0 0;
+    text-align: left;
+    flex: 1;
+}
+
+.portofolio .card-body .item .footer .footer-detail {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0.5rem 0 0;
+    background: #4d648d;
+    border-radius: 0.5rem;
+    padding: 5px 1rem;
+    text-decoration: none;
+    flex-shrink: 0;
+}
+
+.portofolio .card-body .item .footer-detail i {
+      margin-left: 4px;
+}
+
+/* FOOTER */
+footer {
+      position: relative;
+      width: 100%;
+      height: auto;
+      bottom: 0%;
+      left: 0%;
+      margin-top: 2rem;
+      padding: 2rem;
+      background-color: var(--blue);
+      color: white;
+      font-size: 1rem;
+}
+
+footer a {
+      color: var(--bg);
+      font-weight: bold;
+      text-decoration: none;
+}
+
+footer a:hover {
+      color: black;
+}
+
+footer li {
+      list-style: none;
+      display: inline;
+      margin: 0.5rem;
+}
